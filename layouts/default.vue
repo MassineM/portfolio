@@ -50,8 +50,8 @@ export default {
       var xPercent = e.pageX / this.vw;
       var yPercent = e.pageY / this.vh;
 
-      if (!this.onBanner) {
-        document.getElementById("shadow").style.opacity = 0.5 - xPercent;
+      if (!this.onBanner && !this.onTab) {
+        document.getElementById("shadow").style.opacity = 0.7 - xPercent;
         document.getElementById("shadow").style.top =
           Math.floor(e.pageY / 1) * 1 + "px";
       }
@@ -117,6 +117,8 @@ export default {
         "px";
       document.getElementById("selectedTab").style.opacity = 1;
       document.getElementById("shadow").style.width = "500%";
+      
+      document.getElementById("shadow").style.opacity = 1;
     },
     mouseNotBanner(e) {
       this.onBanner = false;

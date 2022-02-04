@@ -12,9 +12,13 @@ $unvalidL: #ffa787;
 $unvalidD: #e36a3d;
 
 body{
-    background: linear-gradient(150deg, $secondaryD, $secondaryM);
+    background-image: url("forest.jpg");
+    background-color: $secondaryD;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     .pagemodel{
+        height: 100vh;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;

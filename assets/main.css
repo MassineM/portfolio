@@ -1,8 +1,12 @@
 body {
-  background: linear-gradient(150deg, #2b4457, #547e9c);
+  background-image: url("forest.jpg");
+  background-color: #2b4457;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 body .pagemodel {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
