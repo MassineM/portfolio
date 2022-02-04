@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="mainArticle">
-      <h1 class="title">Welcome to my personnal WEB portfolio, let me show you around!</h1>
+      <h1 class="title">
+This is the contact section        </h1>
       <p class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta dolor ac facilisis maximus.
         Donec egestas leo nec metus tincidunt, et eleifend eros ornare.

@@ -1,0 +1,93 @@
+$primaryM: #ffb556;
+$primaryL: #ffcb87;
+$primaryD: #e39a3d;
+$secondaryM: #547e9c;
+$secondaryL: #75abd2;
+$secondaryD: #2b4457;
+$validM: #42c589;
+$validL: #73d8aa;
+$validD: #2a9d69;
+$unvalidM: #ff8456;
+$unvalidL: #ffa787;
+$unvalidD: #e36a3d;
+
+body{
+    background: linear-gradient(150deg, $secondaryD, $secondaryM);
+
+    .pagemodel{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+
+        .stickyBanner {
+            position: fixed;
+            color: $validM;
+            height: 100vh;
+            width: MIN(10vh,10vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            bottom: 0;
+            z-index: 0;
+           
+    
+            .icon{
+                //filter: saturate(1000%);
+                //filter: hue-rotate(100deg);
+                position: relative;
+                width: MIN(5vh,5vw);
+                height:MIN(5vh,5vw);
+                z-index: 2;
+                &:hover{
+                    transform: scale(1.2);
+                    filter: saturate(600%);
+                    transition: transform .25s ease-out ;
+                    cursor: pointer;
+                }
+                transition: transform .25s ease-in ;
+            }
+    
+            .shadow {
+                height: 10vh;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                background: linear-gradient(to right,rgba($secondaryL, 0.5), rgba(0,0,0,0));
+                z-index: 1;
+                transform: translateY(-50%);
+                
+              }
+        }
+        
+    
+        .mainArticle{
+            position: relative;
+            display: block;
+            z-index: 0;
+            top:0;
+            left: MIN(10vh,10vw);
+            width:90vw;
+            .title{
+                //text-align: center;
+                background-color: $secondaryM;
+                color: $secondaryD;
+                margin: 6px;
+                padding: 4px 4px 4px 16px;
+                border-radius:10px 0 0 10px ;
+            }
+            
+            .text{
+                color: $primaryL;
+            }
+        }
+    }
+
+    
+}
+
+
+
+

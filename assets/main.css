@@ -1,4 +1,96 @@
 body {
-  
+  background: linear-gradient(150deg, #2b4457, #547e9c);
+}
+
+body .pagemodel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .pagemodel .stickyBanner {
+  position: fixed;
+  color: #42c589;
+  height: 100vh;
+  width: MIN(10vh, 10vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  z-index: 0;
+}
+
+body .pagemodel .stickyBanner .icon {
+  position: relative;
+  width: MIN(5vh, 5vw);
+  height: MIN(5vh, 5vw);
+  z-index: 2;
+  -webkit-transition: -webkit-transform .25s ease-in;
+  transition: -webkit-transform .25s ease-in;
+  transition: transform .25s ease-in;
+  transition: transform .25s ease-in, -webkit-transform .25s ease-in;
+}
+
+body .pagemodel .stickyBanner .icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: saturate(600%);
+          filter: saturate(600%);
+  -webkit-transition: -webkit-transform .25s ease-out;
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+  cursor: pointer;
+}
+
+body .pagemodel .stickyBanner .shadow {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(117, 171, 210, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(117, 171, 210, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .pagemodel .mainArticle {
+  position: relative;
+  display: block;
+  z-index: 0;
+  top: 0;
+  left: MIN(10vh, 10vw);
+  width: 90vw;
+}
+
+body .pagemodel .mainArticle .title {
+  background-color: #547e9c;
+  color: #2b4457;
+  margin: 6px;
+  padding: 4px 4px 4px 16px;
+  border-radius: 10px 0 0 10px;
+}
+
+body .pagemodel .mainArticle .text {
+  color: #ffcb87;
 }
 /*# sourceMappingURL=main.css.map */

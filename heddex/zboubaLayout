@@ -1,8 +1,5 @@
 <template>
-  <div>
-    lalak
-    <Nuxt />
-  </div>
+  <div><nuxt /></div>
 </template>
 
 <script>
