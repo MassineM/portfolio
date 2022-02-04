@@ -1,7 +1,7 @@
 <template>
-  <div>
-      error
-  </div>
+  <h1 class="error">
+      Fetching dragonballs...
+  </h1>
 </template>
 
 <script>

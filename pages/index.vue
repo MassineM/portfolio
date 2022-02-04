@@ -3,16 +3,17 @@
     <div class="mainArticle">
       <h1 class="title">Welcome to my personnal WEB portfolio, let me show you around!</h1>
       <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta dolor ac facilisis maximus.
-        Donec egestas leo nec metus tincidunt, et eleifend eros ornare.
-        Aenean convallis, lectus ac auctor consequat, augue lectus euismod nisi, suscipit porttitor justo diam sed lectus.
-        Maecenas nec augue euismod, rhoncus tellus vel, bibendum neque. Quisque vestibulum imperdiet dolor vitae lacinia.
-        Cras elit eros, fringilla vitae aliquam tempus, volutpat eu urna. Suspendisse quam dui, dictum eget risus eu, egestas posuere neque.
+        In this Web platform are four other pages:
         <br>
-        Phasellus faucibus viverra finibus. Ut eget fringilla nibh, in sollicitudin sem. Mauris non pellentesque magna. 
-        onec mi tellus, tincidunt ultricies urna vitae, efficitur ultrices lorem. Nunc gravida sem a est gravida tempor.
-        Aliquam porttitor dui vel ipsum fringilla, id pharetra lectus euismod. Fusce in semper nulla, hendrerit interdum mi.
-        Vestibulum pellentesque diam ex, vitae ultrices orci pellentesque eget.
+         - The profile section overviews basic identity information.
+        <br>
+         - The skills section lists prominent practical mastered technologies.
+        <br>
+         - The projects section contains achieved personnal and academic work data.
+        <br>
+         - The contact section provides communication addresses and social networks' references.
+        <br>
+        Feel free to wander as you please... And, no penny for your thought but, don't hesitate on contacting me for any idea you'd like to share please, thank you for visiting!
       </p>
     </div>
   </div>

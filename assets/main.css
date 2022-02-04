@@ -79,22 +79,59 @@ body .pagemodel .stickyBanner .shadow {
 
 body .pagemodel .mainArticle {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   z-index: 0;
   top: 0;
   left: MIN(10vh, 10vw);
   width: 90vw;
 }
 
+body .pagemodel .mainArticle .profiletop {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .pagemodel .mainArticle .profiletop .pid {
+  width: 40vh;
+  height: 40vh;
+}
+
 body .pagemodel .mainArticle .title {
-  background-color: #547e9c;
-  color: #2b4457;
+  position: fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(117, 171, 210, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(117, 171, 210, 0.5), rgba(0, 0, 0, 0));
+  color: #73d8aa;
   margin: 6px;
   padding: 4px 4px 4px 16px;
   border-radius: 10px 0 0 10px;
 }
 
 body .pagemodel .mainArticle .text {
+  top: MAX(5vh, 48px);
+  position: relative;
   color: #ffcb87;
 }
 /*# sourceMappingURL=main.css.map */

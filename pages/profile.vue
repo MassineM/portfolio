@@ -1,18 +1,19 @@
 <template>
   <div>
     <div class="mainArticle">
-      <h1 class="title">This is the profile section</h1>
+      <h1 class="title">About me...</h1>
+      <div class="profiletop">
       <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta dolor ac facilisis maximus.
-        Donec egestas leo nec metus tincidunt, et eleifend eros ornare.
-        Aenean convallis, lectus ac auctor consequat, augue lectus euismod nisi, suscipit porttitor justo diam sed lectus.
-        Maecenas nec augue euismod, rhoncus tellus vel, bibendum neque. Quisque vestibulum imperdiet dolor vitae lacinia.
-        Cras elit eros, fringilla vitae aliquam tempus, volutpat eu urna. Suspendisse quam dui, dictum eget risus eu, egestas posuere neque.
+        "Ambition is key to foul the odds"
+      </p>
+      <img src="../assets/ptest.jpg" class="pid"/></div>
+      <p class="text">
+        ~ Massine Mountasser, 22 years old, computer science engineering student
         <br>
-        Phasellus faucibus viverra finibus. Ut eget fringilla nibh, in sollicitudin sem. Mauris non pellentesque magna. 
-        onec mi tellus, tincidunt ultricies urna vitae, efficitur ultrices lorem. Nunc gravida sem a est gravida tempor.
-        Aliquam porttitor dui vel ipsum fringilla, id pharetra lectus euismod. Fusce in semper nulla, hendrerit interdum mi.
-        Vestibulum pellentesque diam ex, vitae ultrices orci pellentesque eget.
+        "Being a student in the Littoral Côte d’Opale's engineering school of informatics,
+         I am looking forward to enrich my career starting by enrolling to an internship,"
+          says the ambitious young man. "I believe it would help me discover my full potential
+           in real situations and that's fine by me, for how big my love for challenge is..."
       </p>
     </div>
   </div>

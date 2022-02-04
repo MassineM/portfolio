@@ -2,18 +2,30 @@
   <div>
     <div class="mainArticle">
       <h1 class="title">This is the skills section</h1>
-      <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta dolor ac facilisis maximus.
-        Donec egestas leo nec metus tincidunt, et eleifend eros ornare.
-        Aenean convallis, lectus ac auctor consequat, augue lectus euismod nisi, suscipit porttitor justo diam sed lectus.
-        Maecenas nec augue euismod, rhoncus tellus vel, bibendum neque. Quisque vestibulum imperdiet dolor vitae lacinia.
-        Cras elit eros, fringilla vitae aliquam tempus, volutpat eu urna. Suspendisse quam dui, dictum eget risus eu, egestas posuere neque.
-        <br>
-        Phasellus faucibus viverra finibus. Ut eget fringilla nibh, in sollicitudin sem. Mauris non pellentesque magna. 
-        onec mi tellus, tincidunt ultricies urna vitae, efficitur ultrices lorem. Nunc gravida sem a est gravida tempor.
-        Aliquam porttitor dui vel ipsum fringilla, id pharetra lectus euismod. Fusce in semper nulla, hendrerit interdum mi.
-        Vestibulum pellentesque diam ex, vitae ultrices orci pellentesque eget.
-      </p>
+      <ul>
+        <li class="text">Languages</li>
+        <li class="text">bash</li>
+        <li class="text">c</li>
+        <li class="text">c++</li>
+        <li class="text">python</li>
+        <li class="text">java</li>
+        <li class="text">javascript</li>
+        <li class="text">php</li>
+        <li class="text">vue.js</li>
+        <li class="text">html</li>
+        <li class="text">Audivisual</li>
+        <li class="text">Cinema 4D</li>
+        <li class="text">FL Studio</li>
+        <li class="text">Audacity</li>
+        <li class="text">Adobe</li>
+        <li class="text">Photoshop</li>
+        <li class="text">After Effects</li>
+        <li class="text">Illustrator</li>
+        <li class="text">Frameworks</li>
+        <li class="text">unity</li>
+        <li class="text">Node.js</li>
+        <li class="text">NuxtJS</li>
+      </ul>
     </div>
   </div>
 </template>

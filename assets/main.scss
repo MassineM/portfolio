@@ -69,21 +69,39 @@ body{
     
         .mainArticle{
             position: relative;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
             z-index: 0;
             top:0;
             left: MIN(10vh,10vw);
             width:90vw;
+            .profiletop{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .pid{
+                    width:40vh;
+                    height:40vh;
+                }
+            }
             .title{
                 //text-align: center;
-                background-color: $secondaryM;
-                color: $secondaryD;
+                position: fixed;
+                background: linear-gradient(to right,rgba($secondaryL, 0.5), rgba(0,0,0,0));
+                color: $validL;
                 margin: 6px;
                 padding: 4px 4px 4px 16px;
                 border-radius:10px 0 0 10px ;
             }
             
             .text{
+                top:MAX(5vh,48px);
+                position: relative;
                 color: $primaryL;
             }
         }
