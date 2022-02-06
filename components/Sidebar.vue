@@ -2,7 +2,7 @@
   <div class="stickyBanner" id="banner">
       <img v-for="I in items" :key="I.Id" :id="I.Id" :src="require(`/static/icons/${I.Sc}.png`)" class="icon"  />
       <div id="shadow" class="shadow" style="top: 0px">
-        <h1 id="selectedTab" style="opacity: 0"></h1>
+        <h1 id="selectedTab" class="selectedTab" style="opacity: 0"></h1>
       </div>
       <div id="shadowCurr" class="shadow" style="top:0px"></div>
     </div>
@@ -56,7 +56,7 @@ export default {
       var yPercent = e.pageY / this.vh;
 
       if (!this.onBanner && !this.onTab) {
-        document.getElementById("shadow").style.opacity = 0.7 - xPercent;
+        document.getElementById("shadow").style.opacity = 0.5 - xPercent;
         document.getElementById("shadow").style.top =
           Math.floor(e.pageY / 1) * 1 + "px";
       }

@@ -70,11 +70,18 @@ body .pagemodel .stickyBanner .shadow {
   width: 100%;
   position: absolute;
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(117, 171, 210, 0.5)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(to right, rgba(117, 171, 210, 0.5), rgba(0, 0, 0, 0));
+  opacity: 0.6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(117, 171, 210, 0.65)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(117, 171, 210, 0.65) 70%, rgba(0, 0, 0, 0));
   z-index: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  text-align: center;
+  font-size: 6vh;
+}
+
+body .pagemodel .stickyBanner .shadow .selectedTab {
+  z-index: 0;
 }
 
 body .pagemodel .mainArticle {
@@ -132,6 +139,7 @@ body .pagemodel .mainArticle .title {
 body .pagemodel .mainArticle .text {
   top: MAX(5vh, 48px);
   position: relative;
+  z-index: 0;
   color: #ffcb87;
 }
 /*# sourceMappingURL=main.css.map */

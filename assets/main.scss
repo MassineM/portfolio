@@ -59,10 +59,15 @@ body{
                 width: 100%;
                 position: absolute;
                 left: 0;
-                background: linear-gradient(to right,rgba($secondaryL, 0.5), rgba(0,0,0,0));
+                opacity:0.6;
+                background: linear-gradient(to right,rgba($secondaryL, 0.65) 70%, rgba(0,0,0, 0));
                 z-index: 1;
                 transform: translateY(-50%);
-                
+                text-align: center;
+                font-size: 6vh;
+                .selectedTab{
+                    z-index: 0;
+                }
               }
         }
         
@@ -102,6 +107,7 @@ body{
             .text{
                 top:MAX(5vh,48px);
                 position: relative;
+                z-index: 0;
                 color: $primaryL;
             }
         }
