@@ -1,121 +1,108 @@
-$primaryM: #ffb556;
-$primaryL: #ffcb87;
-$primaryD: #e39a3d;
-$secondaryM: #547e9c;
-$secondaryL: #75abd2;
-$secondaryD: #2b4457;
-$validM: #42c589;
-$validL: #73d8aa;
-$validD: #2a9d69;
-$unvalidM: #ff8456;
-$unvalidL: #ffa787;
-$unvalidD: #e36a3d;
+@import "layout";
 
-body{
-    background-image: url("forest.jpg");
-    background-color: $secondaryD;
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    .pagemodel{
+.bodyPage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    main {
+        flex-grow: 1;
         height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+.mainArticle {
+    .profiletop {
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-start;
-
-
-        .stickyBanner {
-            position: fixed;
-            color: $validM;
-            height: 100vh;
-            width: MIN(10vh,10vw);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            bottom: 0;
-            z-index: 0;
-           
-    
-            .icon{
-                //filter: saturate(1000%);
-                //filter: hue-rotate(100deg);
-                position: relative;
-                width: MIN(5vh,5vw);
-                height:MIN(5vh,5vw);
-                z-index: 2;
-                &:hover{
-                    transform: scale(1.2);
-                    filter: saturate(600%);
-                    transition: transform .25s ease-out ;
-                    cursor: pointer;
-                }
-                transition: transform .25s ease-in ;
-            }
-    
-            .shadow {
-                height: 10vh;
-                width: 100%;
-                position: absolute;
-                left: 0;
-                opacity:0.6;
-                background: linear-gradient(to right,rgba($secondaryL, 0.65) 70%, rgba(0,0,0, 0));
-                z-index: 1;
-                transform: translateY(-50%);
-                text-align: center;
-                font-size: 6vh;
-                .selectedTab{
-                    z-index: 0;
-                }
-              }
-        }
-        
-    
-        .mainArticle{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            z-index: 0;
-            top:0;
-            left: MIN(10vh,10vw);
-            width:90vw;
-            .profiletop{
-                position: relative;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                .pid{
-                    width:40vh;
-                    height:40vh;
-                }
-            }
-            .title{
-                //text-align: center;
-                position: fixed;
-                background: linear-gradient(to right,rgba($secondaryL, 0.5), rgba(0,0,0,0));
-                color: $validL;
-                margin: 6px;
-                padding: 4px 4px 4px 16px;
-                border-radius:10px 0 0 10px ;
-            }
-            
-            .text{
-                top:MAX(5vh,48px);
-                position: relative;
-                z-index: 0;
-                color: $primaryL;
-            }
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .pid {
+            width: 40vh;
+            height: 40vh;
         }
     }
+    .title {
+        color: $primaryM;
+        background: linear-gradient(to right, rgba($primaryD, 0.2), rgba(0, 0, 0, 0));
+        margin: 10px;
+        padding: 4px 4px 4px 16px;
+        border-radius: 10px 0 0 10px;
+    }
 
-    
+    .text {
+        position: relative;
+        z-index: 0;
+        color: rgb(176, 202, 207);
+    }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #5757575b;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(151, 151, 151);
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(110, 110, 110);
+}
+
+// body {
+//     background-image: url("forest.jpg");
+//     background-color: $secondaryD;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     .pagemodel {
+//         height: 100vh;
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+//         justify-content: flex-start;
+
+//         .stickyBanner {
+//             position: fixed;
+//             color: $validM;
+//             height: 100vh;
+//             width: MIN(10vh, 10vw);
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-around;
+//             align-items: center;
+//             bottom: 0;
+//             z-index: 0;
+
+//             .icon {
+//                 //filter: saturate(1000%);
+//                 //filter: hue-rotate(100deg);
+//                 position: relative;
+//                 width: MIN(5vh, 5vw);
+//                 height: MIN(5vh, 5vw);
+//                 z-index: 2;
+//                 &:hover {
+//                     transform: scale(1.2);
+//                     filter: saturate(600%);
+//                     transition: transform 0.25s ease-out;
+//                     cursor: pointer;
+//                 }
+//                 transition: transform 0.25s ease-in;
+//             }
+
+//         }
+
+//     }
+// }

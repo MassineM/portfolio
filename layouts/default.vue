@@ -1,17 +1,14 @@
 <template>
-  <div class="pagemodel">
-    <Sidebar />
-    <Nuxt />
+  <div class="bodyPage">
+    <sidemenu />
+    <main>
+      <Nuxt />
+    </main>
   </div>
 </template>
 
 <script>
-
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

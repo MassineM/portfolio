@@ -1,0 +1,87 @@
+$primaryM: #549489;
+$primaryL: rgb(176, 202, 207);
+$primaryD: #40746b;
+$secondaryM: #547e9c;
+$secondaryL: #75abd2;
+$secondaryD: #121d25;
+$validM: #42c589;
+$validL: #73d8aa;
+$validD: #2a9d69;
+$unvalidM: #ff8456;
+$unvalidL: #ffa787;
+$unvalidD: #e36a3d;
+
+body {
+    min-height: 100vh;
+    background-color: $secondaryD;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.jpg");
+    background-size: cover;
+}
+
+.sidemenuContainer {
+    flex-shrink: 0;
+    padding: 5vh 2vw;
+    nav {
+        height: 100%;
+
+        ul {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 2;
+            align-items: center;
+            li {
+                svg {
+                    width: MIN(5vh, 5vw);
+                    height: MIN(5vh, 5vw);
+                    fill: #fff;
+                }
+            }
+        }
+
+        .shadow {
+            height: 10vh;
+            width: 6vw;
+            position: absolute;
+            left: 0;
+            opacity: 0.6;
+            background: linear-gradient(to right, rgba($secondaryD, 0.8) 70%, rgba(0, 0, 0, 0));
+            transform: translateY(-50%);
+            text-align: center;
+            font-size: MIN(2vw, 10vh);
+            z-index: 1;
+            top: 7.5vh;
+            transition: top 0.2s ease-out, opacity 0.2s ease-out, width 0.2s ease-out;
+            .selectedTab {
+                justify-content: center;
+                align-items: center;
+                color: $primaryL;
+                display: "none";
+            }
+        }
+
+        .currshadow {
+            @extend .shadow;
+            background: linear-gradient(to right, rgba($validD, 0.2), rgba(0, 0, 0, 0));
+        }
+
+        .icon {
+            svg {
+                fill: $primaryL;
+            }
+        }
+        .selIcon:hover {
+            svg {
+                fill: $primaryM;
+            }
+            transform: scale(1.2);
+        }
+        .currIcon {
+            svg {
+                fill: $validD;
+            }
+        }
+    }
+}

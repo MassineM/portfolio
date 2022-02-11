@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icons/profile.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '~/assets/icons/profile.png' }
     ]
   },
 
