@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '~/assets/icons/profile.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/profile.png' }
     ]
   },
 
@@ -40,7 +40,7 @@ export default {
   build: {
   },
   server: {
-    host: '192.168.1.32', // default: localhost
+    host: '192.168.1.63', // default: localhost
     port: 8080 // default: 3000
   }
 }
