@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="skills">
     <div class="mainArticle">
       <h1 class="title">This is the skills section</h1>
       <ul>

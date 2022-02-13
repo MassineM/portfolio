@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="projects">
     <div class="mainArticle">
       <h1 class="title">This is the projects section</h1>
       <table>

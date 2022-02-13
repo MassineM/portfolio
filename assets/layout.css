@@ -4,12 +4,13 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("forest.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.jpg");
   background-size: cover;
+  overflow: hidden;
 }
 
 .sidemenuContainer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 5vh 2vw;
+  padding: 5vh 1vw;
 }
 
 .sidemenuContainer nav {
@@ -35,44 +36,113 @@ body {
           align-items: center;
 }
 
+.sidemenuContainer nav ul .currshadow {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  width: 5vw;
+  height: 8vh;
+  left: -2vw;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(42, 157, 105, 0.2)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(42, 157, 105, 0.2), rgba(0, 0, 0, 0));
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidemenuContainer nav ul li {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw;
+  cursor: pointer;
+}
+
 .sidemenuContainer nav ul li svg {
   width: MIN(5vh, 5vw);
   height: MIN(5vh, 5vw);
   fill: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.sidemenuContainer nav .shadow, .sidemenuContainer nav .currshadow {
-  height: 10vh;
-  width: 6vw;
+.sidemenuContainer nav ul li::after {
+  content: "";
+}
+
+.sidemenuContainer nav ul li:hover svg {
+  fill: #549489;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sidemenuContainer nav ul li.active svg {
+  fill: #2a9d69;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sidemenuContainer nav ul li.active::after {
+  display: block;
+}
+
+.sidemenuContainer nav ul li.active:hover {
+  fill: #2a9d69;
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.sidemenuContainer nav ul .shadow {
+  width: MIN(2vh, 2vw);
+  height: MIN(2vh, 2vw);
+  z-index: 1;
   position: absolute;
-  left: 0;
-  opacity: 0.6;
-  background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(18, 29, 37, 0.8)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(to right, rgba(18, 29, 37, 0.8) 70%, rgba(0, 0, 0, 0));
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  opacity: 1;
   text-align: center;
   font-size: MIN(2vw, 10vh);
-  z-index: 1;
-  top: 7.5vh;
-  -webkit-transition: top 0.2s ease-out, opacity 0.2s ease-out, width 0.2s ease-out;
-  transition: top 0.2s ease-out, opacity 0.2s ease-out, width 0.2s ease-out;
-}
-
-.sidemenuContainer nav .shadow .selectedTab, .sidemenuContainer nav .currshadow .selectedTab {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-transition: opacity 0.2s ease-out, width 0.2s ease-out;
+  transition: opacity 0.2s ease-out, width 0.2s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #b0cacf;
-  display: "none";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: -1vw;
 }
 
-.sidemenuContainer nav .currshadow {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(42, 157, 105, 0.2)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(to right, rgba(42, 157, 105, 0.2), rgba(0, 0, 0, 0));
+.sidemenuContainer nav ul .shadow svg {
+  fill: #40746b;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sidemenuContainer nav ul .text {
+  position: absolute;
+  left: MIN(10vw, 10vh);
+  opacity: 1;
+  color: #549489;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.sidemenuContainer nav .icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .sidemenuContainer nav .icon svg {
@@ -88,7 +158,20 @@ body {
   fill: #549489;
 }
 
+.sidemenuContainer nav .currIcon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .sidemenuContainer nav .currIcon svg {
   fill: #2a9d69;
+}
+
+.sidemenuContainer nav .icon,
+.sidemenuContainer nav .currIcon,
+.sidemenuContainer nav .selIcon:hover,
+.sidemenuContainer nav svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 /*# sourceMappingURL=layout.css.map */

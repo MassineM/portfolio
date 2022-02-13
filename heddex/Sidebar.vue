@@ -72,12 +72,12 @@ export default {
           Math.floor(e.pageY / 1) * 1 + "px";
       }
     },
-
-    mouseOnBanner(e) {
+    mouseOnSide(e) {
       document.getElementById("selectedTab").style.opacity = 1;
 
       this.onBanner = true;
-      var c = 2000;
+      var c = 9999;
+      this.closest = 1;
       for (let i = 1; i <= 5; i++) {
         if (
           Math.abs(
@@ -94,40 +94,37 @@ export default {
           this.closest = i;
         }
       }
-      this.selected = this.tabs[this.closest - 1];
+      this.selected = this.nav[this.closest - 1];
       this.selTab = Object.values(this.selected)[1];
 
       document.getElementById("shadow").style.top =
         document.getElementById(this.closest).offsetTop +
-        (2.5 * this.vh) / 100 +
+        (7.5 * this.vh) / 100 +
         "px";
-      document.getElementById("selectedTab").style.opacity = 1;
-      document.getElementById("shadow").style.width = "500%";
+      document.getElementById("selectedTab").style.display = "flex";
+      document.getElementById("shadow").style.width = "20vw";
 
       document.getElementById("shadow").style.opacity = 1;
     },
-    mouseNotBanner(e) {
+    mouseNotSide(e) {
       this.onBanner = false;
-      document.getElementById("shadow").style.width = "100%";
-      document.getElementById("selectedTab").style.opacity = 0;
-    },
-    mouseNotTab(e) {
-      this.onTab = false;
+      document.getElementById("shadow").style.width = "7vw";
+      document.getElementById("selectedTab").style.display = "none";
     },
     mouseClick(e) {
-      if (this.selected != "index") this.$router.push("/" + this.selected);
+      if (this.selTab != "index") this.$router.push("/" + this.selTab);
       else this.$router.push("/");
-      this.currTab = this.tabs[this.selected].Id;
+      this.currTab = Object.values(this.selected)[0];
 
       document.getElementById("shadowCurr").style.top =
         document.getElementById(this.currTab).offsetTop +
-        (2.5 * this.vh) / 100 +
+        (7.5 * this.vh) / 100 +
         "px";
-      for (let i = 1; i <= 5; i++) {
-        if (this.currTab == i)
-          document.getElementById(i).style.filter = "saturate(600%)";
-        else document.getElementById(i).style.filter = "saturate(100%)";
-      }
+      // for (let i = 1; i <= 5; i++) {
+      //   if (this.currTab == i)
+      //     document.getElementById(i).style.filter = "saturate(600%)";
+      //   else document.getElementById(i).style.filter = "saturate(100%)";
+      // }
     },
   },
 };

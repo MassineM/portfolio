@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact" class="contact">
     <div class="mainArticle">
       <h1 class="title">
 This is the contact section        </h1>

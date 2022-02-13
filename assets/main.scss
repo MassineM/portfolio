@@ -13,7 +13,9 @@
     }
 }
 
+
 .mainArticle {
+    height: 100vh;
     .profiletop {
         position: relative;
         display: flex;
@@ -27,6 +29,7 @@
             height: 40vh;
         }
     }
+
     .title {
         color: $primaryM;
         background: linear-gradient(to right, rgba($primaryD, 0.2), rgba(0, 0, 0, 0));
@@ -34,13 +37,13 @@
         padding: 4px 4px 4px 16px;
         border-radius: 10px 0 0 10px;
     }
-
     .text {
         position: relative;
         z-index: 0;
         color: rgb(176, 202, 207);
     }
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;
