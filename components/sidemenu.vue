@@ -120,7 +120,7 @@ export default {
       let xPercent = e.pageX / vw;
       this.shadow_top = (e.pageY - vh*5/100) + "px";
       if (this.get_hovered_text() == null)
-        this.shadow_opacity = (0.2 - xPercent) * 3;
+        this.shadow_opacity = (0.25 - xPercent) * 3;
       else this.shadow_opacity = 1;
     },
     selectCurrent(item) {
