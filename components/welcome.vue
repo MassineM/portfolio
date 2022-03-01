@@ -1,9 +1,11 @@
 <template>
-  <div id="home">
+  <div id="about">
     <div class="mainArticle">
-      <h1 class="title">Welcome to my personnal WEB portfolio, let me show you around!</h1>
+      <h1 class="title">Welcome to my personnal WEB portfolio!</h1>
       <p class="text">
-        In this Web platform are four other pages:
+        Greetings, and welcome to my online curriculum vitae web page. Let me show you around...
+        <br>
+        In this Web platform are four other sections:
         <br>
          - The profile section overviews basic identity information.
         <br>

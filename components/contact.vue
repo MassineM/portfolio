@@ -1,19 +1,34 @@
 <template>
   <div id="contact" class="contact">
     <div class="mainArticle">
-      <h1 class="title">
-This is the contact section        </h1>
+      <h1 class="title">Contact me by...</h1>
       <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta dolor ac facilisis maximus.
-        Donec egestas leo nec metus tincidunt, et eleifend eros ornare.
-        Aenean convallis, lectus ac auctor consequat, augue lectus euismod nisi, suscipit porttitor justo diam sed lectus.
-        Maecenas nec augue euismod, rhoncus tellus vel, bibendum neque. Quisque vestibulum imperdiet dolor vitae lacinia.
-        Cras elit eros, fringilla vitae aliquam tempus, volutpat eu urna. Suspendisse quam dui, dictum eget risus eu, egestas posuere neque.
-        <br>
-        Phasellus faucibus viverra finibus. Ut eget fringilla nibh, in sollicitudin sem. Mauris non pellentesque magna. 
-        onec mi tellus, tincidunt ultricies urna vitae, efficitur ultrices lorem. Nunc gravida sem a est gravida tempor.
-        Aliquam porttitor dui vel ipsum fringilla, id pharetra lectus euismod. Fusce in semper nulla, hendrerit interdum mi.
-        Vestibulum pellentesque diam ex, vitae ultrices orci pellentesque eget.
+      <table>
+        <tr>
+          <td class="text">LinkedIn</td>
+          <td class="text">https://www.linkedin.com/in/massine-mountasser-90a49b1b1/</td>
+        </tr>
+        <tr>
+          <td class="text">Discord</td>
+          <td class="text">
+            MassineM#8110
+          </td>
+        </tr>
+        <tr>
+          <td class="text">Facebook</td>
+          <td class="text">
+            https://www.facebook.com/massine.mtsr/
+          </td>
+        </tr>
+        <tr>
+          <td class="text">Instagram</td>
+          <td class="text">https://www.instagram.com/massinemtsr/</td>
+        </tr>
+        <tr>
+          <td class="text">Email address</td>
+          <td class="text">mountasser.massine@gmail.com</td>
+        </tr>
+      </table>
       </p>
     </div>
   </div>
