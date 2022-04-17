@@ -3,8 +3,8 @@
 body {
   min-height: 100vh;
   background-color: #121d25;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("forest.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("forest.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.png");
   background-size: cover;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -48,8 +48,8 @@ body {
   left: -2vw;
   background: -webkit-gradient(linear, left top, right top, from(rgba(42, 157, 105, 0.2)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, rgba(42, 157, 105, 0.2), rgba(0, 0, 0, 0));
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .sidemenuContainer nav ul li {
@@ -130,13 +130,14 @@ body {
   transition: all 0.2s ease-in;
 }
 
-.sidemenuContainer nav ul .text, .sidemenuContainer nav ul .mainArticle .project, .mainArticle .sidemenuContainer nav ul .project {
+.sidemenuContainer nav ul .text, .sidemenuContainer nav ul .mainArticle .hiveElmnt, .mainArticle .sidemenuContainer nav ul .hiveElmnt, .sidemenuContainer nav ul .mainArticle .hiveLine, .mainArticle .sidemenuContainer nav ul .hiveLine, .sidemenuContainer nav ul .mainArticle .project, .mainArticle .sidemenuContainer nav ul .project, .sidemenuContainer nav ul .mainArticle .pItem, .mainArticle .sidemenuContainer nav ul .pItem,
+.sidemenuContainer nav ul .mainArticle .pLign, .mainArticle .sidemenuContainer nav ul .pLign {
   position: absolute;
   left: MIN(10vw, 10vh);
   opacity: 1;
   color: #549489;
   text-transform: uppercase;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: MIN(5vh, 5vw);
   line-height: 2rem;
   padding: 1rem;
@@ -229,32 +230,58 @@ body {
 }
 
 .mainArticle .profiletop .pid {
-  width: 25%;
-  height: 25%;
+  position: relative;
+  margin: MAX(2vh, 2vw);
+  width: 17%;
+  height: 17%;
   opacity: 0.7;
 }
 
 .mainArticle .title {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: MIN(3vh, 3vw);
   color: #549489;
+  height: MIN(10vh, 10vw);
   background: -webkit-gradient(linear, left top, right top, from(rgba(64, 116, 107, 0.2)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, rgba(64, 116, 107, 0.2), rgba(0, 0, 0, 0));
-  margin: 10px;
-  padding: 4px 4px 4px 16px;
-  border-radius: 10px 0 0 10px;
+  padding: MIN(5vh, 5vw);
+  margin: MIN(6vh, 6vw);
+  position: relative;
+  display: inline-block;
+  width: auto;
 }
 
-.mainArticle .text, .mainArticle .project {
-  font-family: 'Share Tech Mono', monospace;
+.mainArticle .text, .mainArticle .hiveElmnt, .mainArticle .hiveLine, .mainArticle .project, .mainArticle .pItem,
+.mainArticle .pLign {
+  font-family: "Share Tech Mono", monospace;
   font-size: MIN(2vh, 2vw);
   position: relative;
   z-index: 0;
   color: #b0cacf;
 }
 
-.mainArticle .tr {
-  padding: 1vh;
+.mainArticle .hiveElmnt {
+  position: relative;
+  padding: MIN(3.5vh, 3.5vw);
+  display: block;
+}
+
+.mainArticle .hiveLine {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.mainArticle .hiveCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mainArticle .container {
@@ -294,6 +321,11 @@ body {
           transform: scale(1.1);
 }
 
+.mainArticle .pItem,
+.mainArticle .pLign {
+  padding: 10px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -313,5 +345,22 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(48, 48, 48, 0.514);
+}
+
+.slidefade-enter-active {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.slidefade-leave-active {
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slidefade-enter-from,
+.slidefade-leave-to {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

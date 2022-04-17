@@ -9,6 +9,10 @@
           <td class="text">https://www.linkedin.com/in/massine-mountasser-90a49b1b1/</td>
         </tr>
         <tr>
+          <td class="text">Github</td>
+          <td class="text">https://github.com/greyF0xx</td>
+        </tr>
+        <tr>
           <td class="text">Discord</td>
           <td class="text">
             MassineM#8110

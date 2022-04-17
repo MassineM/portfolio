@@ -7,13 +7,13 @@
         <br>
         In this Web platform are four other sections:
         <br>
-         - The profile section overviews basic identity information.
+         ~ The profile section overviews basic identity information.
         <br>
-         - The skills section lists prominent practical mastered technologies.
+         ~ The skills section lists prominent practical mastered technologies.
         <br>
-         - The projects section contains achieved personnal and academic work data.
+         ~ The projects section contains achieved personnal and academic work data.
         <br>
-         - The contact section provides communication addresses and social networks' references.
+         ~ The contact section provides communication addresses and social networks' references.
         <br>
         Feel free to wander as you please... And, no penny for your thought but, don't hesitate on contacting me for any idea you'd like to share please, thank you for visiting!
       </p>

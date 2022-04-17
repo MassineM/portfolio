@@ -3,8 +3,8 @@
 body {
   min-height: 100vh;
   background-color: #121d25;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("forest.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("forest.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.png");
   background-size: cover;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -48,8 +48,8 @@ body {
   left: -2vw;
   background: -webkit-gradient(linear, left top, right top, from(rgba(42, 157, 105, 0.2)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, rgba(42, 157, 105, 0.2), rgba(0, 0, 0, 0));
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .sidemenuContainer nav ul li {
@@ -136,7 +136,7 @@ body {
   opacity: 1;
   color: #549489;
   text-transform: uppercase;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: MIN(5vh, 5vw);
   line-height: 2rem;
   padding: 1rem;
