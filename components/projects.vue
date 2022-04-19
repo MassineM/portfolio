@@ -2,6 +2,12 @@
   <div id="projects">
     <div class="mainArticle">
       <h1 class="title">Some of my previous works:</h1>
+      <a
+        target="_blank"
+        class="pItem"
+        href="https://drive.google.com/drive/folders/1YxnYqCPUNngOJvELSOoJQK2760Orkcsb?usp=sharing"
+        >For all available documentation, check this out...</a
+      >
       <ul class="container">
         <li
           v-for="tab of projects"

@@ -35,6 +35,18 @@
             </ul>
           </li>
         </ul>
+        <ul class="hiveCont">
+          <li class="hiveLine">
+      <a
+        target="_blank"
+        class="pItem"
+        href="https://drive.google.com/file/d/17ax8yZUWVOOu_8JjJBHHabkYgfxHXxNU/view?usp=sharing"
+        >Link for my French version CV in PDF format here !</a
+      >
+            
+          </li>
+
+        </ul>
       </p>
     </div>
   </div>
