@@ -3,7 +3,7 @@
     <div class="mainArticle">
       <h1 class="title">Who am I?</h1>
       <div class="profiletop">
-        <img src="~/assets/ME2.png" class="pid" />
+        <img src="~/assets/ME2.png" class="pid" style="filter: saturate(0)" />
         <p class="text">
           "Ambition is key to foul the odds"
           <br />

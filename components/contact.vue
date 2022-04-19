@@ -3,36 +3,38 @@
     <div class="mainArticle">
       <h1 class="title">Contact me by...</h1>
       <p class="text">
-      <table>
-        <tr>
-          <td class="text">LinkedIn</td>
-          <td class="text">https://www.linkedin.com/in/massine-mountasser-90a49b1b1/</td>
-        </tr>
-        <tr>
-          <td class="text">Github</td>
-          <td class="text">https://github.com/greyF0xx</td>
-        </tr>
-        <tr>
-          <td class="text">Discord</td>
-          <td class="text">
-            MassineM#8110
-          </td>
-        </tr>
-        <tr>
-          <td class="text">Facebook</td>
-          <td class="text">
-            https://www.facebook.com/massine.mtsr/
-          </td>
-        </tr>
-        <tr>
-          <td class="text">Instagram</td>
-          <td class="text">https://www.instagram.com/massinemtsr/</td>
-        </tr>
-        <tr>
-          <td class="text">Email address</td>
-          <td class="text">mountasser.massine@gmail.com</td>
-        </tr>
-      </table>
+        <ul class="hiveCont">
+            <ul>
+              <li class="hiveElmnt">Email : mountasser.massine@gmail.com</li>
+              <li class="hiveElmnt">Discord : MassineM#8110</li>
+            </ul>
+          <li class="hiveLine">
+            <ul><li class="hiveElmnt"><a :href="`https://www.linkedin.com/in/massine-mountasser-90a49b1b1/`" target="_blank" class="pItem"
+                >LinkedIn</a
+              ></li>
+              
+            </ul>
+          </li>
+          <li class="hiveLine">
+            <ul><li class="hiveElmnt"><a :href="`https://github.com/greyF0xx`" target="_blank" class="pItem"
+                >Github</a
+              ></li>
+            </ul>
+          </li>
+          <li class="hiveLine">
+            <ul>
+              <li class="hiveElmnt"><a :href="`https://www.instagram.com/massinemtsr/`" target="_blank" class="pItem"
+                >Instagram</a
+              ></li>
+            </ul>
+          </li>
+          <li class="hiveLine">
+            <ul><li class="hiveElmnt"><a :href="`https://www.facebook.com/massine.mtsr/`" target="_blank" class="pItem"
+                >Facebook</a
+              ></li>
+            </ul>
+          </li>
+        </ul>
       </p>
     </div>
   </div>

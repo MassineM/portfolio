@@ -206,6 +206,22 @@ body {
 }
 
 .mainArticle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
 }
 
@@ -232,20 +248,22 @@ body {
 .mainArticle .profiletop .pid {
   position: relative;
   margin: MAX(2vh, 2vw);
-  width: 17%;
-  height: 17%;
+  width: MAX(17vh, 17vw);
+  height: MAX(17vh, 17vw);
   opacity: 0.7;
 }
 
 .mainArticle .title {
   font-family: "Source Code Pro", monospace;
-  font-size: MIN(3vh, 3vw);
+  font-size: MIN(6vh, 6vw);
   color: #549489;
-  height: MIN(10vh, 10vw);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background: -webkit-gradient(linear, left top, right top, from(rgba(64, 116, 107, 0.2)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, rgba(64, 116, 107, 0.2), rgba(0, 0, 0, 0));
-  padding: MIN(5vh, 5vw);
-  margin: MIN(6vh, 6vw);
+  padding: MIN(3vh, 3vw);
+  margin: MIN(3vh, 3vw);
   position: relative;
   display: inline-block;
   width: auto;
@@ -254,42 +272,82 @@ body {
 .mainArticle .text, .mainArticle .hiveElmnt, .mainArticle .hiveLine, .mainArticle .project, .mainArticle .pItem,
 .mainArticle .pLign {
   font-family: "Share Tech Mono", monospace;
-  font-size: MIN(2vh, 2vw);
+  font-size: MIN(2.5vh, 2.5vw);
   position: relative;
   z-index: 0;
   color: #b0cacf;
 }
 
 .mainArticle .hiveElmnt {
-  position: relative;
-  padding: MIN(3.5vh, 3.5vw);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(18, 29, 37, 0.6)), to(rgba(84, 126, 156, 0.2)));
+  background: linear-gradient(to right, rgba(18, 29, 37, 0.6), rgba(84, 126, 156, 0.2));
   display: block;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: MIN(2vh, 2vw);
+}
+
+.mainArticle .hiveElmnt svg {
+  width: auto;
+  height: auto;
 }
 
 .mainArticle .hiveLine {
   position: relative;
-  display: inline-block;
-  height: 100%;
-}
-
-.mainArticle .hiveCont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainArticle .hiveCont {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .mainArticle .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 97%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(64, 116, 107, 0.2)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, rgba(64, 116, 107, 0.2), rgba(0, 0, 0, 0));
 }

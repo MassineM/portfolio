@@ -96,17 +96,27 @@ export default {
         },
         {
           key: 5,
-          title: "Truck Platooning",
+          title: "Motus",
           description:
-            "Supervised personal initiative work as a part of the preparatory classes for engineering schools contests",
-          tools:
-            "Research and study of functionnal & technical aspects of platooning technologies on heavy vehicles",
-          link: "https://drive.google.com/file/d/1Oz2yr06rkOqM6mpjHcgW-q3Y4arkskLm/view?usp=sharing",
+            "Based on the famous Lingo television game, this is a French version named Motus based console game",
+          tools: "Fully developped by C language",
+          link: "https://github.com/greyF0xx/motus",
           year: 2019,
           selected: false,
         },
         {
           key: 6,
+          title: "Truck Platooning",
+          description:
+            "Supervised personal initiative work as a part of the preparatory classes for engineering schools contests",
+          tools:
+            "Research and study of functionnal & technical aspects of platooning technologies on heavy vehicles",
+          link: "https://drive.google.com/drive/folders/1PnquLbU0D0tQFjlgf_Y_z-A0JCY9avii?usp=sharing",
+          year: 2019,
+          selected: false,
+        },
+        {
+          key: 7,
           title: "Dodger Cab",
           description:
             "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
