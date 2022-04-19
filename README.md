@@ -1,21 +1,31 @@
-# portfolio
+# Portfolio
+Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over.
+-----------------------------------------------------
 
-## Build Setup
+### How to compile:
 
-```bash
-# install dependencies
-$ npm install
+#### Requirements
+  1. Make sure you have installed ***Node.JS***:
+    _https://nodejs.org/en/_
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+#### Install
+  2. Install Node modules the following command in project folder:
+    ***npm install***
+    
+#### Build
+  3. Execute the following command to run the server:
+    ***npm run dev***
+    
+### Have fun!
+  
+-------------------------------------------------------------
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+## Credits:
+###  Massine Mountasser
+####  _aka._ **Grey Fox**
+#### 2021
 
-# generate static project
-$ npm run generate
-```
+-------------------------------------------------------------
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
