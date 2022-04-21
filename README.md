@@ -2,6 +2,11 @@
 Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over.
 -----------------------------------------------------
 
+### Description:
+  >> Entirely made using Vue.JS in a Nuxt based project;
+  >> No additionnal plugins used;
+  >> Only needs Node.JS installed.
+
 ### How to compile:
 
 #### Requirements
