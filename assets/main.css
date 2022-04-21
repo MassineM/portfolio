@@ -2,9 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Source+Code+Pro:wght@600&display=swap");
 body {
   min-height: 100vh;
-  background-color: #121d25;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("forest.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))), url("forest.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("forest.png");
   background-size: cover;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -130,8 +129,7 @@ body {
   transition: all 0.2s ease-in;
 }
 
-.sidemenuContainer nav ul .text, .sidemenuContainer nav ul .mainArticle .hiveElmnt, .mainArticle .sidemenuContainer nav ul .hiveElmnt, .sidemenuContainer nav ul .mainArticle .hiveLine, .mainArticle .sidemenuContainer nav ul .hiveLine, .sidemenuContainer nav ul .mainArticle .project, .mainArticle .sidemenuContainer nav ul .project, .sidemenuContainer nav ul .mainArticle .pItem, .mainArticle .sidemenuContainer nav ul .pItem,
-.sidemenuContainer nav ul .mainArticle .pLign, .mainArticle .sidemenuContainer nav ul .pLign {
+.sidemenuContainer nav ul .text, .sidemenuContainer nav ul .hiveElmnt, .sidemenuContainer nav ul .skill, .sidemenuContainer nav ul .hiveLine, .sidemenuContainer nav ul .project, .sidemenuContainer nav ul .pItem {
   position: absolute;
   left: MIN(10vw, 10vh);
   opacity: 1;
@@ -180,6 +178,33 @@ body {
   transition: all 0.2s;
 }
 
+@media only screen and (orientation: portrait) {
+  .sidemenuContainer nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .sidemenuContainer nav ul .currshadow {
+    background: rgba(0, 0, 0, 0);
+  }
+  .sidemenuContainer nav ul li::after {
+    content: "";
+  }
+  .sidemenuContainer nav ul li:hover svg {
+    fill: #fff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .sidemenuContainer nav ul li.active svg {
+    fill: #fff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .sidemenuContainer nav ul li.active:hover {
+    fill: #fff;
+  }
+}
+
 .bodyPage {
   min-height: 100vh;
   display: -webkit-box;
@@ -216,16 +241,18 @@ body {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  width: 80vw;
+  left: 5vw;
 }
 
-.mainArticle .profiletop {
+.profiletop {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,7 +272,7 @@ body {
   width: 100%;
 }
 
-.mainArticle .profiletop .pid {
+.profiletop .pid {
   position: relative;
   margin: MAX(2vh, 2vw);
   width: MAX(17vh, 17vw);
@@ -253,7 +280,7 @@ body {
   opacity: 0.7;
 }
 
-.mainArticle .title {
+.title {
   font-family: "Source Code Pro", monospace;
   font-size: MIN(6vh, 6vw);
   color: #549489;
@@ -269,16 +296,16 @@ body {
   width: auto;
 }
 
-.mainArticle .text, .mainArticle .hiveElmnt, .mainArticle .hiveLine, .mainArticle .project, .mainArticle .pItem,
-.mainArticle .pLign {
+.text, .hiveElmnt, .skill, .hiveLine, .project, .pItem {
   font-family: "Share Tech Mono", monospace;
   font-size: MIN(2.5vh, 2.5vw);
+  text-align: justify;
   position: relative;
   z-index: 0;
   color: #b0cacf;
 }
 
-.mainArticle .hiveElmnt {
+.hiveElmnt, .skill {
   background: -webkit-gradient(linear, left top, right top, from(rgba(18, 29, 37, 0.6)), to(rgba(84, 126, 156, 0.2)));
   background: linear-gradient(to right, rgba(18, 29, 37, 0.6), rgba(84, 126, 156, 0.2));
   display: block;
@@ -298,15 +325,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   padding: MIN(2vh, 2vw);
-}
-
-.mainArticle .hiveElmnt svg {
+  margin: MIN(2vh, 2vw);
   width: auto;
   height: auto;
 }
 
-.mainArticle .hiveLine {
+.hiveElmnt span, .skill span {
+  width: MAX(3vh, 3vw);
+  height: MAX(3vh, 3vw);
+}
+
+.hiveElmnt span svg, .skill span svg {
+  width: 90%;
+  height: 90%;
+}
+
+.hiveLine {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,13 +354,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.mainArticle .hiveCont {
-  margin-left: auto;
-  margin-right: auto;
+.hiveCont {
   width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,23 +371,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.mainArticle .container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 97%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(64, 116, 107, 0.2)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, rgba(64, 116, 107, 0.2), rgba(0, 0, 0, 0));
 }
 
-.mainArticle .project {
+.project {
   position: relative;
   display: inline;
   -webkit-box-align: center;
@@ -367,21 +403,26 @@ body {
   transition: all 0.2s ease-in;
 }
 
-.mainArticle .project:hover {
+.project:hover {
   color: #2a9d69;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.mainArticle .project.active {
+.project.active {
   color: #2a9d69;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.mainArticle .pItem,
-.mainArticle .pLign {
+.pItem {
   padding: 10px;
+}
+
+.pLign {
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(18, 29, 37, 0.6)), to(rgba(84, 126, 156, 0.2)));
+  background: linear-gradient(to right, rgba(18, 29, 37, 0.6), rgba(84, 126, 156, 0.2));
 }
 
 ::-webkit-scrollbar {
@@ -420,5 +461,22 @@ body {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   opacity: 0;
+}
+
+@media only screen and (orientation: portrait) {
+  .skill {
+    width: MIN(4vh, 4vw);
+    padding: MIN(4vh, 4vw);
+    margin: 0;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project {
+    height: MIN(6vh, 6vw);
+  }
 }
 /*# sourceMappingURL=main.css.map */

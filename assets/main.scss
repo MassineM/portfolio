@@ -18,9 +18,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
+  width: 80vw;
+  left: 5vw;
+}
   .profiletop {
     position: relative;
     display: flex;
@@ -57,6 +60,7 @@
   .text {
     font-family: "Share Tech Mono", monospace;
     font-size: MIN(2.5vh, 2.5vw);
+    text-align: justify;
     position: relative;
     z-index: 0;
     color: rgb(176, 202, 207);
@@ -76,38 +80,45 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: MIN(2vh, 2vw);
-    
-        svg {
-          width: auto;
-          height: auto;
+    margin: MIN(2vh, 2vw);
+    width: auto;
+    height: auto;
+    span{
+      width: MAX(3vh, 3vw);
+      height: MAX(3vh, 3vw);
+      svg {
+      width: 90%;
+      height: 90%;
+    }
+
+
+    }
         }
-  }
 
   .hiveLine {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     
     @extend .text;
   }
 
   .hiveCont {
-    margin-left: auto;
-    margin-right: auto;
     width: 70vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
   }
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 97%;
     background: linear-gradient(
       to right,
@@ -135,12 +146,17 @@
     }
   }
 
-  .pItem,
+  .pItem
+  {@extend .text;
+    padding: 10px;}
   .pLign {
-    @extend .text;
     padding: 10px;
+    background: linear-gradient(
+      to right,
+      rgba($secondaryD, 0.6),
+      rgba($secondaryM, 0.2)
+    );
   }
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -175,4 +191,23 @@
 .slidefade-leave-to {
   transform: translateX(20px);
   opacity: 0;
+}
+
+.skill{
+  @extend .hiveElmnt;
+}
+
+@media only screen and (orientation:portrait){
+        .skill{
+          width: MIN(4vh, 4vw);
+          padding: MIN(4vh, 4vw);
+          margin: 0;
+        }
+        .container{
+          flex-direction: column;
+        }
+        .project{
+          height: MIN(6vh, 6vw);
+
+        }
 }

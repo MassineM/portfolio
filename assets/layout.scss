@@ -13,10 +13,12 @@ $unvalidD: #e36a3d;
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Source+Code+Pro:wght@600&display=swap");
 
+
+
 body {
   min-height: 100vh;
-  background-color: $secondaryD;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  // background-color: $secondaryD;
+  background-image: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.7)),
     url("forest.png");
   background-size: cover;
   overflow: hidden;
@@ -69,20 +71,6 @@ body {
         }
         &::after {
           content: "";
-          //   position: absolute;
-          //   top: 0;
-          //   right: 0;
-          //   bottom: 0;
-          //   left: -2vw;
-          //   display: none;
-          //   padding-right: 2vw;
-          //   height: 100%;
-          //   width: 100%;
-          //   background: linear-gradient(
-          //     to right,
-          //     rgba($validD, 0.2),
-          //     rgba(0, 0, 0, 0)
-          //   );
         }
         &:hover {
           svg {
@@ -165,3 +153,37 @@ body {
     }
   }
 }
+
+
+
+@media only screen and (orientation:portrait){
+  .sidemenuContainer {
+  nav {
+    ul {
+      justify-content: space-evenly;
+      .currshadow {
+       
+        background: 
+          rgba(0, 0, 0, 0);
+      }
+
+      li {
+        &::after {
+          content: "";
+        }
+        &:hover {
+          svg {
+            fill: #fff;
+            transform: scale(1);
+          }
+        }
+        &.active {
+          svg {
+            fill: #fff;
+            transform: scale(1);
+          }
+          &:hover {
+            fill: #fff;
+          }
+        }}
+}}}}
