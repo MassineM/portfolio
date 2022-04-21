@@ -14,7 +14,7 @@
 #### Requirements
   1. Make sure you have installed ***Node.JS***:
   
-    _https://nodejs.org/en/_
+   _https://nodejs.org/en/_
 
 #### Install
   2. Install Node modules the following command in project folder:
