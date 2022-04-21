@@ -18,7 +18,7 @@ Personnal project made from scratch, firstly in the purpose of publishing an acc
     ***npm install***
     
 #### Build
-  3. Execute the following command to run the server:
+  3. Execute the following command to run the server on ***https://localhost:8080/***:
     ***npm run dev***
     
 ### Have fun!
