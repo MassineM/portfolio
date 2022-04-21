@@ -14,17 +14,17 @@
 #### Requirements
   1. Make sure you have installed ***Node.JS***:
   
-    ***https://nodejs.org/en/***
+   _https://nodejs.org/en/_
 
 #### Install
   2. Install Node modules the following command in project folder:
   
-    ***npm install***
+   ***npm install***
     
 #### Build
   3. Execute the following command to run the server on ***https://localhost:8080/***:
   
-    ***npm run dev***
+   ***npm run dev***
     
 ### Have fun!
   
