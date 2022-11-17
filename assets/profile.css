@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Source+Code+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800;900&display=swap");
+.title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: MIN(6vh, 6vw);
+  color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 58, 105, 0.8)), to(rgba(36, 84, 138, 0.8)));
+  background: linear-gradient(to right, rgba(16, 58, 105, 0.8), rgba(36, 84, 138, 0.8));
+  border-radius: MAX(2vh, 2vw);
+  -webkit-box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.5);
+  padding: MIN(1vh, 1vw) MIN(3vh, 3vw);
+  margin: MIN(3vh, 3vw);
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: MIN(2vh, 2vw);
+  text-align: justify;
+  position: relative;
+  z-index: 0;
+  color: #2a156f;
+}
+
+.profiletop {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.profiletop .pid {
+  top: 0px;
+  position: relative;
+  margin: MAX(1vh, 1vw);
+  width: MAX(17vh, 17vw);
+  height: MAX(17vh, 17vw);
+  opacity: 0.7;
+}
+
+.profileText {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: MIN(2vh, 2vw);
+  text-align: justify;
+  position: relative;
+  z-index: 0;
+  color: #042245;
+}
+
+.certifications {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 58, 105, 0.6)), to(rgba(36, 84, 138, 0.6)));
+  background: linear-gradient(to right, rgba(16, 58, 105, 0.6), rgba(36, 84, 138, 0.6));
+  border-radius: MIN(2vh, 2vw);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: MIN(2vh, 2vw);
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: MIN(2vh, 2vw);
+  margin: MIN(2vh, 2vw);
+}
+
+.certifications span {
+  width: MAX(3vh, 3vw);
+  height: MAX(3vh, 3vw);
+}
+
+.certifications span svg {
+  width: 90%;
+  height: 90%;
+}
+/*# sourceMappingURL=profile.css.map */

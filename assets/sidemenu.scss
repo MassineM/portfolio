@@ -1,0 +1,165 @@
+@import "variables";
+
+.sidemenuContainer {
+  background-color: rgba($secondaryD, 0.5);
+
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  nav {
+    height: 100%;
+    ul {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      z-index: 3;
+      align-items: center;
+
+      .currshadow {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 10vh;
+        background: linear-gradient(
+          to right,
+          rgba(#fff, 0.5),
+          rgba(0, 0, 0, 0)
+        );
+        transition: all 0.5s;
+      }
+      .icon {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+        cursor: pointer;
+        svg {
+          width: MIN(5vh, 5vw);
+          height: MIN(5vh, 5vw);
+        }
+        svg {
+          path,
+          circle {
+            fill: rgba(#fff, 0.7) !important;
+            transition: all 0.5s ease-in-out;
+          }
+          transition: all 0.5s ease-in-out;
+        }
+        &::after {
+          content: "";
+        }
+        &:hover {
+          svg {
+            transform: scale(1.2);
+            path,
+            circle {
+              fill: $secondaryL !important;
+            }
+          }
+        }
+        &.active {
+          svg {
+            transform: scale(1.1);
+            path,
+            circle {
+              fill: $secondaryD !important;
+            }
+          }
+        }
+      }
+      .text {
+        position: absolute;
+        z-index: 4;
+        left: MIN(10vw, 10vh);
+        opacity: 1;
+        color: $secondaryD;
+        // text-transform: uppercase;
+        font-family: "Rubik", sans-serif;
+        font-weight: 600;
+        font-size: MIN(4vh, 4vw);
+        line-height: MIN(2vh, 2vw);
+        padding: MIN(2vh, 2vw);
+        background-color: rgba($color: $secondaryL, $alpha: 0.7);
+        border-radius: 20px;
+        -webkit-box-shadow: 2px 2px 7px -2px rgba(#000, 0.5);
+        box-shadow: 2px 2px 7px -2px rgba(#000, 0.5);
+      }
+    }
+  }
+}
+
+.fade-enter-active {
+  animation: fadeIn 0.5s;
+}
+
+.fade-leave-active {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .sidemenuContainer {
+    nav {
+      ul {
+        .currshadow,
+        .shadow,
+        .text {
+          display: none;
+        }
+
+        .icon {
+          svg {
+            path,
+            circle {
+              fill: #fff !important;
+            }
+          }
+          &::after {
+            content: "";
+          }
+          &:hover {
+            svg {
+              transform: scale(1);
+              path,
+              circle {
+                fill: #fff !important;
+              }
+            }
+          }
+          &.active {
+            svg {
+              path,
+              circle {
+                fill: #fff !important;
+              }
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

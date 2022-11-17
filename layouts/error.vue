@@ -1,15 +1,13 @@
 <template>
-  <h1 class="error">
-      Fetching dragonballs...
-  </h1>
+  <div class="mainArticle">
+    <h1 class="error">
+      An error occured, please click <router-link :to="'/'">here</router-link>
+    </h1>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

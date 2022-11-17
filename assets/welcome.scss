@@ -1,0 +1,61 @@
+@import "variables";
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePicContainer {
+  position: relative;
+  width: MIN(50vh, 50vw);
+  height: MIN(50vh, 50vw);
+}
+.picBg {
+  position: absolute;
+  width: MIN(50vh, 50vw);
+  height: MIN(50vh, 50vw);
+}
+.homePic {
+  position: absolute;
+  top: MIN(1vh, 1vw);
+  left: MIN(1vh, 1vw);
+  width: MIN(48vh, 48vw);
+  height: MIN(48vh, 48vw);
+}
+
+.homeTitle {
+  font-family: "Oxanium";
+  font-size: MIN(5vh, 4vw);
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  height: fit-content;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.homeSubTitle {
+  font-family: "Oxanium";
+  font-size: MIN(4.5vh, 3.5vw);
+  font-weight: 600;
+  margin: MIN(2vh, 2vw) 0;
+  text-align: center;
+  color: #fff;
+  height: fit-content;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.homeText {
+  font-family: "Quicksand-Medium";
+  font-weight: 600;
+  font-size: MIN(2vh, 3vw);
+  font-style: italic;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+}

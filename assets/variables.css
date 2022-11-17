@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Oxanium;
+  src: url("~/assets/fonts/Oxanium-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand-Light;
+  src: url("~/assets/fonts/Quicksand-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url("~/assets/fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("~/assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand-SemiBold;
+  src: url("~/assets/fonts/Quicksand-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("~/assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik-SemiBold;
+  src: url("~/assets/fonts/Rubik-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik-Black;
+  src: url("~/assets/fonts/Rubik-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: MIN(6vh, 6vw);
+  text-align: center;
+  color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 58, 105, 0.8)), to(rgba(36, 84, 138, 0.8)));
+  background: linear-gradient(to right, rgba(16, 58, 105, 0.8), rgba(36, 84, 138, 0.8));
+  border-radius: MAX(2vh, 2vw);
+  -webkit-box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.5);
+  padding: MIN(2vh, 2vw) MIN(3vh, 3vw);
+  margin: MIN(3vh, 3vw);
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.text {
+  font-family: "Quicksand-Medium";
+  font-weight: 500;
+  font-size: MIN(2vh, 2vw);
+  text-align: justify;
+  position: relative;
+  z-index: 0;
+  color: #2a156f;
+}
+/*# sourceMappingURL=variables.css.map */

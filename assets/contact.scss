@@ -1,0 +1,64 @@
+@import "variables";
+
+.contactElement {
+  background: linear-gradient(
+    to right,
+    rgba($secondaryD, 0.6),
+    rgba($secondaryM, 0.6)
+  );
+  border-radius: MIN(2vh, 2vw);
+  padding: MIN(2vh, 2vw);
+  margin: MIN(2vh, 2vw);
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Quicksand-Medium";
+    font-weight: 500;
+    font-size: MAX(1.27vh, 1vw);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    svg {
+      width: MAX(3vh, 3vw);
+      height: MAX(3vh, 3vw);
+    }
+  }
+  transition: all 0.75s ease;
+  &:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+  }
+}
+
+.contactContainer {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .contactElement {
+    &:hover {
+      transform: scale(1);
+      filter: brightness(1);
+    }
+  }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactLine {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    .contactElement {
+      width: 18vw;
+    }
+  }
+}

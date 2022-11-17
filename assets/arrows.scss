@@ -1,0 +1,58 @@
+@import "variables";
+
+.arrow {
+  p {
+    margin: 0 0 20px;
+    text-align: center;
+    color: $primaryD;
+    font-size: large;
+  }
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+
+  &:hover {
+    polygon {
+      fill: $secondaryD;
+      transition: all 0.2s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+    }
+  }
+}
+
+polygon {
+  fill: $secondaryD;
+  transition: all 0.2s ease-out;
+
+  &.arrow-middle {
+    opacity: 0.75;
+  }
+
+  &.arrow-top {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  #more-arrows {
+    polygon {
+      &.arrow-bottom {
+        transform: translateY(0);
+      }
+
+      &.arrow-top {
+        transform: translateY(0);
+      }
+    }
+  }
+}

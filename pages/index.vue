@@ -1,7 +1,7 @@
 <template>
   <div>
     <welcome />
-    <profile />
+    <about />
     <skills />
     <projects />
     <contact />
@@ -9,12 +9,9 @@
 </template>
 
 <script>
-//document.addEventListener('mousemove',function(e){mypageY=e.pageY;});
 export default {
   data: function () {
-    return {
-      //platoon: true,
-    };
+    return {};
   },
   methods: {},
 };

@@ -14,11 +14,12 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/profile.png" }],
   },
 
+  target: "static",
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/reset.css", "@/assets/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: "@/plugins/vue-particles.js", ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -32,6 +33,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   server: {
+    host: "0.0.0.0",
     port: 8080, // default: 3000
   },
 };

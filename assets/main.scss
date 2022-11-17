@@ -1,19 +1,37 @@
-@import "layout";
+@import "variables";
+@import "sidemenu";
+@import "welcome";
+@import "arrows";
+@import "about";
+@import "skills";
+@import "projects";
+@import "contact";
+
+body {
+  background-image: url(~/assets/pfbg.svg);
+  background-size: 100vw 500vh;
+  background-position: top;
+}
 
 .bodyPage {
-  min-height: 100vh;
+  position: absolute;
+  scroll-behavior: smooth;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   main {
     flex-grow: 1;
-    height: 100vh;
     overflow-y: scroll;
   }
 }
 
 .mainArticle {
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -22,192 +40,59 @@
   align-items: center;
   height: 100vh;
   width: 80vw;
-  left: 5vw;
+  left: 13.5vw;
 }
-  .profiletop {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    .pid {
-      position: relative;
-      margin: MAX(2vh,2vw);
-      width: MAX(17vh,17vw);
-      height: MAX(17vh,17vw);
-      opacity: 0.7;
-    }
-  }
-
-  .title {
-    font-family: "Source Code Pro", monospace;
-    font-size: MIN(6vh, 6vw);
-    color: $primaryM;
-    height: fit-content;
-    background: linear-gradient(
-      to right,
-      rgba($primaryD, 0.2),
-      rgba(0, 0, 0, 0)
-    );
-    padding: MIN(3vh, 3vw);
-    margin: MIN(3vh, 3vw);
-    position: relative;
-    display:inline-block;
-    width: auto;
-  }
-  .text {
-    font-family: "Share Tech Mono", monospace;
-    font-size: MIN(2.5vh, 2.5vw);
-    text-align: justify;
-    position: relative;
-    z-index: 0;
-    color: rgb(176, 202, 207);
-  }
-
-  .hiveElmnt {
-    background: linear-gradient(
-      to right,
-      rgba($secondaryD, 0.6),
-      rgba($secondaryM, 0.2)
-    );
-    display: block;
-    @extend .text;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: MIN(2vh, 2vw);
-    margin: MIN(2vh, 2vw);
-    width: auto;
-    height: auto;
-    span{
-      width: MAX(3vh, 3vw);
-      height: MAX(3vh, 3vw);
-      svg {
-      width: 90%;
-      height: 90%;
-    }
-
-
-    }
-        }
-
-  .hiveLine {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
-    @extend .text;
-  }
-
-  .hiveCont {
-    width: 70vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 97%;
-    background: linear-gradient(
-      to right,
-      rgba($primaryD, 0.2),
-      rgba(0, 0, 0, 0)
-    );
-  }
-
-  .project {
-    @extend .text;
-    position: relative;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-    &:hover {
-      color: $validD;
-      transform: scale(1.2);
-    }
-    &.active {
-      color: $validD;
-      transform: scale(1.1);
-    }
-  }
-
-  .pItem
-  {@extend .text;
-    padding: 10px;}
-  .pLign {
-    padding: 10px;
-    background: linear-gradient(
-      to right,
-      rgba($secondaryD, 0.6),
-      rgba($secondaryM, 0.2)
-    );
-  }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #57575717;
+//particles
+
+.particles {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  width: 60%;
-  background: rgba(47, 66, 107, 0.226);
+.particle {
+  position: absolute;
+  border-radius: 50%;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(48, 48, 48, 0.514);
-}
+@for $i from 1 through 30 {
+  @keyframes particle-animation-#{$i} {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: (random(40) + 40) / 100;
+    }
+    90% {
+      opacity: (random(40) + 40) / 100;
+    }
+    100% {
+      transform: translate3d(
+        (random(100) * 1vw),
+        (random(100) * 1vh),
+        (random(100) * 1px)
+      );
+      opacity: 0;
+    }
+  }
 
-.slidefade-enter-active {
-  transition: all 0.3s ease-out;
-}
-
-.slidefade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-
-.slidefade-enter-from,
-.slidefade-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
-}
-
-.skill{
-  @extend .hiveElmnt;
-}
-
-@media only screen and (orientation:portrait){
-        .skill{
-          width: MIN(4vh, 4vw);
-          padding: MIN(4vh, 4vw);
-          margin: 0;
-        }
-        .container{
-          flex-direction: column;
-        }
-        .project{
-          height: MIN(6vh, 6vw);
-
-        }
+  .particle:nth-child(#{$i}) {
+    animation: particle-animation-#{$i} 40s infinite;
+    $size: random(5) + 12 + px;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * 0.2s;
+    transform: translate3d(
+      (random(100) * 1vw),
+      (random(100) * 1vh),
+      (random(100) * 1px)
+    );
+    // background: hsl(random(360), 70%, 50%);
+    background-color: $secondaryL;
+  }
 }
