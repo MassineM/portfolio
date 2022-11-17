@@ -1,20 +1,32 @@
 # Portfolio
-Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over.
+   ## Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over.
+   
+  > Responsive version: try it on different display modes;
+
+  > Entirely made using Vue.JS in a Nuxt based project;
+  
+  > No additionnal plugins used;
+  
+  > Only needs Node.JS installed.
+
 -----------------------------------------------------
 
 ### How to compile:
 
 #### Requirements
   1. Make sure you have installed ***Node.JS***:
-    _https://nodejs.org/en/_
+  
+        _https://nodejs.org/en/_
 
 #### Install
   2. Install Node modules the following command in project folder:
-    ***npm install***
+  
+       ***npm install***
     
 #### Build
-  3. Execute the following command to run the server:
-    ***npm run dev***
+  3. Execute the following command to run the server on ***https://localhost:8080/***:
+  
+       ***npm run dev***
     
 ### Have fun!
   
