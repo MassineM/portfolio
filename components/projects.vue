@@ -69,7 +69,7 @@ export default {
             "Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over",
           tools:
             "Nuxt.JS based, icons using Illustrator, SASS for animations, mainly structured by Vue.JS and JavaScript",
-          link: "https://github.com/greyF0xx/portfolio",
+          link: "https://github.com/MassineM/portfolio",
           year: 2022,
           selected: true,
         },
@@ -80,7 +80,7 @@ export default {
             "For my second year assistant engineer internship, I got to work with this advertising startup on creating a showcase website and a management interface",
           tools:
             "Showcase website using Bootstrap, a second one using Nuxt.JS and the management interface using native PHP and MySQL",
-          link: "https://github.com/greyF0xx/FonacoGestionPHP",
+          link: "https://github.com/MassineM/FonacoGestionPHP",
           year: 2022,
           selected: false,
         },
@@ -91,7 +91,7 @@ export default {
             "Part of a bigger project, the main task was to create a bee farm data exploiting web platform.",
           tools:
             "Structured as such: API: Node.JS, APP: NuxtJS, Vue and Vuetify.",
-          link: "https://github.com/greyF0xx/connectedHive",
+          link: "https://github.com/MassineM/connectedHive",
           year: 2022,
           selected: false,
         },
@@ -102,7 +102,7 @@ export default {
             "Based on the classic snake game concept, this is a home made version with variable levels and maps, hosted on an adapted Web platform",
           tools:
             "Nuxt.JS and Vue for the front, Node.JS for the API, connected to MongoDB and containing the Unity game launcher under WebGL",
-          link: "https://github.com/greyF0xx/Snek",
+          link: "https://github.com/MassineM/Snek",
           year: 2021,
           selected: false,
         },
@@ -111,7 +111,7 @@ export default {
           title: "Connect 4",
           description: "Console based player versus player game",
           tools: "Basic Java console application",
-          link: "https://github.com/greyF0xx/Connect4",
+          link: "https://github.com/MassineM/Connect4",
           year: 2021,
           selected: false,
         },
@@ -121,7 +121,7 @@ export default {
           description:
             "Based on the famous Lingo television game, this is a French version named Motus based console game",
           tools: "Fully developped by C language",
-          link: "https://github.com/greyF0xx/motus",
+          link: "https://github.com/MassineM/motus",
           year: 2019,
           selected: false,
         },
@@ -142,7 +142,7 @@ export default {
           description:
             "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
           tools: "Python 3 and Pygame library",
-          link: "https://github.com/greyF0xx/dodgerCab",
+          link: "https://github.com/MassineM/dodgerCab",
           year: 2012,
           selected: false,
         },

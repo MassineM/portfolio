@@ -13,7 +13,7 @@
             >
           </li>
           <li class="contactElement">
-            <a :href="`https://github.com/greyF0xx`" target="_blank">
+            <a :href="`https://github.com/MassineM`" target="_blank">
               <span v-html="networks[1]"> </span>GitHub</a
             >
           </li>
@@ -46,8 +46,8 @@
           <li class="contactElement">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/17ax8yZUWVOOu_8JjJBHHabkYgfxHXxNU/view?usp=sharing"
-              ><span v-html="link3"> </span>PDF French version resume here.</a
+              href="https://drive.google.com/drive/folders/1Z-IkMNktw8JUbEjJXlIkkJhVSy7qNmiX?usp=share_link"
+              ><span v-html="link3"> </span>PDF resume here.</a
             >
           </li>
         </ul>
