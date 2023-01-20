@@ -77,9 +77,9 @@ export default {
           key: 2,
           title: "PlantIO",
           description:
-            "This project's goal is to help any farmer or gardner understand their plantations' environment to promote optimal growth conditions.",
+            "This project's goal is to help any farmer or gardner understand their plantations' environment to promote optimal growth conditions",
           tools:
-            "Setting a Raspberry to collect data for a Firebase API, used by a web front (Angular) & mobile app (React).",
+            "Setting a Raspberry to collect data for a Firebase API, used by a web front (Angular) & mobile app (React)",
           link: "https://github.com/MassineM/PlantIO",
           year: 2023,
           selected: false,
@@ -88,9 +88,9 @@ export default {
           key: 3,
           title: "AMLBID Interface",
           description:
-            "Improving and adding features to a user interface of an automated machine learning system.",
+            "Improving and adding features to a user interface of an automated machine learning system",
           tools:
-            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Python generated AML system.",
+            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Python generated AML system",
           year: 2023,
           selected: false,
         },
@@ -98,9 +98,9 @@ export default {
           key: 4,
           title: "Connected Hive",
           description:
-            "Part of a bigger project, the main task was to create a bee farm data exploiting web platform.",
+            "Part of a bigger project, the main task was to create a bee farm data exploiting web platform",
           tools:
-            "Data gathering: Arduino & Sigfox, API: Node.JS & MongoDB, APP: NuxtJS, Vue and Vuetify.",
+            "Data gathering: Arduino & Sigfox, API: Node.JS & MongoDB, APP: NuxtJS, Vue and Vuetify",
           link: "https://github.com/MassineM/connectedHive",
           year: 2022,
           selected: false,
@@ -109,9 +109,9 @@ export default {
           key: 5,
           title: "QuickPickMovies",
           description:
-            "A web platform designed to help users with movies recommendations and information.",
+            "A web platform designed to help users with movies recommendations and information",
           tools:
-            "Firebase gathering data from an external API (RapidAPI), front using NuxtJS.",
+            "Firebase gathering data from an external API (RapidAPI), front using NuxtJS",
           link: "https://github.com/MassineM/QuickPickMovies",
           year: 2022,
           selected: false,
