@@ -26,7 +26,7 @@
           <td class="pTitle pLeft">Tools used</td>
           <td class="pItem pRight">{{ selectedTab.tools }};</td>
         </tr>
-        <tr class="pLign">
+        <tr class="pLign" v-if="selectedTab.link">
           <td class="pTitle pLeft">Source code</td>
           <td>
             <a
@@ -64,17 +64,6 @@ export default {
       projects: [
         {
           key: 1,
-          title: "This WEB portfolio",
-          description:
-            "Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over",
-          tools:
-            "Nuxt.JS based, icons using Illustrator, SASS for animations, mainly structured by Vue.JS and JavaScript",
-          link: "https://github.com/MassineM/portfolio",
-          year: 2022,
-          selected: true,
-        },
-        {
-          key: 2,
           title: "Internship at Fonaco",
           description:
             "For my second year assistant engineer internship, I got to work with this advertising startup on creating a showcase website and a management interface",
@@ -82,21 +71,53 @@ export default {
             "Showcase website using Bootstrap, a second one using Nuxt.JS and the management interface using native PHP and MySQL",
           link: "https://github.com/MassineM/FonacoGestionPHP",
           year: 2022,
+          selected: true,
+        },
+        {
+          key: 2,
+          title: "PlantIO",
+          description:
+            "This project's goal is to help any farmer or gardner understand their plantations' environment to promote optimal growth conditions.",
+          tools:
+            "Setting a Raspberry to collect data for a Firebase API, used by a web front (Angular) & mobile app (React).",
+          link: "https://github.com/MassineM/PlantIO",
+          year: 2023,
           selected: false,
         },
         {
           key: 3,
+          title: "AMLBID Interface",
+          description:
+            "Improving and adding features to a user interface of an automated machine learning system.",
+          tools:
+            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Python generated AML system.",
+          year: 2023,
+          selected: false,
+        },
+        {
+          key: 4,
           title: "Connected Hive",
           description:
             "Part of a bigger project, the main task was to create a bee farm data exploiting web platform.",
           tools:
-            "Structured as such: API: Node.JS, APP: NuxtJS, Vue and Vuetify.",
+            "Data gathering: Arduino & Sigfox, API: Node.JS & MongoDB, APP: NuxtJS, Vue and Vuetify.",
           link: "https://github.com/MassineM/connectedHive",
           year: 2022,
           selected: false,
         },
         {
-          key: 4,
+          key: 5,
+          title: "QuickPickMovies",
+          description:
+            "A web platform designed to help users with movies recommendations and information.",
+          tools:
+            "Firebase gathering data from an external API (RapidAPI), front using NuxtJS.",
+          link: "https://github.com/MassineM/QuickPickMovies",
+          year: 2022,
+          selected: false,
+        },
+        {
+          key: 6,
           title: "Snek",
           description:
             "Based on the classic snake game concept, this is a home made version with variable levels and maps, hosted on an adapted Web platform",
@@ -107,16 +128,7 @@ export default {
           selected: false,
         },
         {
-          key: 5,
-          title: "Connect 4",
-          description: "Console based player versus player game",
-          tools: "Basic Java console application",
-          link: "https://github.com/MassineM/Connect4",
-          year: 2021,
-          selected: false,
-        },
-        {
-          key: 6,
+          key: 7,
           title: "Motus",
           description:
             "Based on the famous Lingo television game, this is a French version named Motus based console game",
@@ -125,6 +137,36 @@ export default {
           year: 2019,
           selected: false,
         },
+        {
+          key: 8,
+          title: "Dodger Cab",
+          description:
+            "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
+          tools: "Python 3 and Pygame library",
+          link: "https://github.com/MassineM/dodgerCab",
+          year: 2012,
+          selected: false,
+        },
+        // {
+        //   key: 1,
+        //   title: "This WEB portfolio",
+        //   description:
+        //     "Personnal project made from scratch, firstly in the purpose of publishing an accessible Curriculum Vitae, before the ambition of completing a rich portfolio took over",
+        //   tools:
+        //     "Nuxt.JS based, icons using Illustrator, SASS for animations, mainly structured by Vue.JS and JavaScript",
+        //   link: "https://github.com/MassineM/portfolio",
+        //   year: 2022,
+        //   selected: true,
+        // },
+        // {
+        //   key: 5,
+        //   title: "Connect 4",
+        //   description: "Console based player versus player game",
+        //   tools: "Basic Java console application",
+        //   link: "https://github.com/MassineM/Connect4",
+        //   year: 2021,
+        //   selected: false,
+        // },
         // {
         //   key: 6,
         //   title: "Truck Platooning",
@@ -136,16 +178,6 @@ export default {
         //   year: 2019,
         //   selected: false,
         // },
-        {
-          key: 7,
-          title: "Dodger Cab",
-          description:
-            "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
-          tools: "Python 3 and Pygame library",
-          link: "https://github.com/MassineM/dodgerCab",
-          year: 2012,
-          selected: false,
-        },
       ],
     };
   },
