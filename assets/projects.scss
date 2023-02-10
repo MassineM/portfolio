@@ -45,14 +45,24 @@
     rgba($secondaryM, 0.6)
   );
   border-radius: MIN(2vh, 2vw);
+  height: 33vh;
 }
 .pItem {
   font-family: "Quicksand-Medium";
   font-weight: 500;
   font-size: MAX(1.2vh, 0.8vw);
   text-align: justify;
+  vertical-align: middle;
+  line-height: 1.5;
   color: #fff;
   padding: MIN(1vh, 1vw);
+  max-width: 50vw;
+  a {
+    font-family: "Quicksand-Medium";
+    font-weight: 500;
+    font-size: MAX(1.2vh, 0.8vw);
+    color: #fff;
+  }
 }
 .pTitle {
   @extend .pItem;
@@ -62,13 +72,13 @@
   padding-top: MIN(1.5vh, 1.5vw);
 }
 .pLeft {
-  padding-left: MIN(2vh, 2vw);
+  padding-left: MIN(3vh, 3vw);
 }
 .pDown {
   padding-bottom: MIN(1.5vh, 1.5vw);
 }
 .pRight {
-  padding-right: MIN(2vh, 2vw);
+  padding-right: MIN(4vh, 4vw);
 }
 
 .documentation {
@@ -149,5 +159,17 @@
   }
   .project {
     margin: 5px 0;
+  }
+  .pTop {
+    padding-top: MIN(3vh, 3vw);
+  }
+  .pLeft {
+    padding-left: MIN(4vh, 4vw);
+  }
+  .pDown {
+    padding-bottom: MIN(3vh, 3vw);
+  }
+  .pRight {
+    padding-right: MIN(4vh, 4vw);
   }
 }

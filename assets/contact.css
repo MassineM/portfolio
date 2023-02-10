@@ -1,35 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Source+Code+Pro:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap");
+@font-face {
+  font-family: Oxanium;
+  src: url("~/assets/fonts/Oxanium-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quicksand-Light;
+  src: url("~/assets/fonts/Quicksand-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url("~/assets/fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("~/assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quicksand-SemiBold;
+  src: url("~/assets/fonts/Quicksand-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("~/assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rubik-SemiBold;
+  src: url("~/assets/fonts/Rubik-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rubik-Black;
+  src: url("~/assets/fonts/Rubik-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 .title {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
-  font-size: MIN(6vh, 6vw);
+  font-size: min(6vh, 6vw);
   text-align: center;
   color: #fff;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 58, 105, 0.8)), to(rgba(36, 84, 138, 0.8)));
   background: linear-gradient(to right, rgba(16, 58, 105, 0.8), rgba(36, 84, 138, 0.8));
-  border-radius: MAX(2vh, 2vw);
-  -webkit-box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.5);
+  border-radius: max(2vh, 2vw);
   box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.5);
-  padding: MIN(2vh, 2vw) MIN(3vh, 3vw);
-  margin: MIN(3vh, 3vw);
+  padding: min(2vh, 2vw) min(3vh, 3vw);
+  margin: min(3vh, 3vw);
   position: relative;
   display: inline-block;
   width: auto;
 }
 
 .text {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Quicksand-Medium";
   font-weight: 500;
-  font-size: MIN(2vh, 2vw);
+  font-size: min(2vh, 2vw);
   text-align: justify;
   position: relative;
   z-index: 0;
@@ -37,98 +75,58 @@
 }
 
 .contactElement {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 58, 105, 0.6)), to(rgba(36, 84, 138, 0.6)));
   background: linear-gradient(to right, rgba(16, 58, 105, 0.6), rgba(36, 84, 138, 0.6));
-  border-radius: MIN(2vh, 2vw);
-  padding: MIN(2vh, 2vw);
-  margin: MIN(2vh, 2vw);
-  -webkit-transition: all 0.75s ease;
+  border-radius: min(2vh, 2vw);
+  padding: min(2vh, 2vw);
+  margin: min(2vh, 2vw);
   transition: all 0.75s ease;
 }
-
 .contactElement a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Work Sans', sans-serif;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Quicksand-Medium";
   font-weight: 500;
-  font-size: MAX(1.27vh, 1vw);
+  font-size: max(1.27vh, 1vw);
   text-align: center;
   text-decoration: none;
   color: #fff;
 }
-
 .contactElement a svg {
-  width: MAX(3vh, 3vw);
-  height: MAX(3vh, 3vw);
+  width: max(3vh, 3vw);
+  height: max(3vh, 3vw);
 }
-
 .contactElement:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
 .contactContainer {
   width: 70vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
   .contactElement:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
+    transform: scale(1);
+    filter: brightness(1);
   }
 }
-
 @media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
   .contactContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .contactLine {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
   .contactLine .contactElement {
     width: 18vw;
   }
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

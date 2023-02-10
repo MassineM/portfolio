@@ -12,37 +12,36 @@
         @click="selectTab(tab)"
       ></li>
     </ul>
-    <Transition name="slidefade">
-      <table v-if="show" class="pTable">
-        <tr class="pLign">
-          <td class="pTitle pTop pLeft">Name</td>
-          <td class="pItem pTop pRight">{{ selectedTab.title }};</td>
-        </tr>
-        <tr class="pLign">
-          <td class="pTitle pLeft">Description</td>
-          <td class="pItem pRight">{{ selectedTab.description }};</td>
-        </tr>
-        <tr class="pLign">
-          <td class="pTitle pLeft">Tools used</td>
-          <td class="pItem pRight">{{ selectedTab.tools }};</td>
-        </tr>
-        <tr class="pLign" v-if="selectedTab.link">
-          <td class="pTitle pLeft">Source code</td>
-          <td>
-            <a
-              :href="`${selectedTab.link}`"
-              target="_blank"
-              class="pItem pRight"
-              >{{ selectedTab.link }};</a
-            >
-          </td>
-        </tr>
-        <tr class="pLign">
-          <td class="pTitle pLeft pDown">Year</td>
-          <td class="pItem pRight pDown">{{ selectedTab.year }};</td>
-        </tr>
-      </table>
-    </Transition>
+    <div style="height: 33vh">
+      <Transition name="slidefade">
+        <table v-if="show" class="pTable">
+          <tr class="pLign">
+            <td class="pTitle pTop pLeft">Name</td>
+            <td class="pItem pTop pRight">{{ selectedTab.title }};</td>
+          </tr>
+          <tr class="pLign">
+            <td class="pTitle pLeft">Description</td>
+            <td class="pItem pRight">{{ selectedTab.description }};</td>
+          </tr>
+          <tr class="pLign">
+            <td class="pTitle pLeft">Tools used</td>
+            <td class="pItem pRight">{{ selectedTab.tools }};</td>
+          </tr>
+          <tr class="pLign" v-if="selectedTab.link">
+            <td class="pTitle pLeft">Source code</td>
+            <td class="pItem pRight">
+              <a :href="`${selectedTab.link}`" target="_blank"
+                >{{ selectedTab.link }};</a
+              >
+            </td>
+          </tr>
+          <tr class="pLign">
+            <td class="pTitle pLeft pDown">Year</td>
+            <td class="pItem pRight pDown">{{ selectedTab.year }};</td>
+          </tr>
+        </table>
+      </Transition>
+    </div>
     <a
       target="_blank"
       class="documentation"
@@ -86,11 +85,12 @@ export default {
         },
         {
           key: 3,
-          title: "AMLBID Interface",
+          title: "AMLBID Interface & AutoML",
           description:
-            "Improving and adding features to a user interface of an automated machine learning system",
+            "Improving and adding features to a user interface of an automated machine learning system. Another part of the project is a bibliographic research on research on Automated Machine Learning",
           tools:
-            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Python generated AML system",
+            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Python generated AML system. Research based on scientific articles made with LaTeX",
+          link: "https://shorturl.at/dKO68",
           year: 2023,
           selected: false,
         },
