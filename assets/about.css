@@ -92,6 +92,7 @@
   position: relative;
   margin: max(1vh, 1vw);
   width: 50%;
+  background: #103a69;
 }
 @supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
   .profiletop .pid {
@@ -99,8 +100,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     background-image: url(~/assets/ME2.png);
-    background-size: 117%;
-    background-position: 200% 10%;
+    background-size: auto 125%;
+    background-position: 175% bottom;
   }
 }
 .profiletop .timeline {
@@ -155,5 +156,7 @@
   .profiletop .pid,
   .profiletop .timeline {
     width: auto;
+    background-position: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=about.css.map */

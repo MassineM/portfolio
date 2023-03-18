@@ -2,7 +2,7 @@
   <div id="Index" class="mainArticle">
     <div class="homePicContainer">
       <svg v-html="picBg" id="picBg" class="picBg"></svg>
-      <img src="~/assets/indexPicBnW.png" id="homePic" class="homePic" />
+      <img src="~/assets/meSmile.png" id="homePic" class="homePic" />
     </div>
     <div class="welcome">
       <p class="homeTitle animate-text-1">Massine Mountasser, 23 years old</p>

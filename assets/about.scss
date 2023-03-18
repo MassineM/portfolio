@@ -17,19 +17,16 @@
     position: relative;
     margin: MAX(1vh, 1vw);
     width: 50%;
+    background: $secondaryD;
 
     @supports (background-clip: text) or (-webkit-background-clip: text) {
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
 
-      // background-image: url(https://i.giphy.com/media/jaOXKCxtBPLieRLI0c/200w.webp);
-      // background-size: cover;
-      // background-position: center;
-
       background-image: url(~/assets/ME2.png);
-      background-size: 117%;
-      background-position: 200% 10%;
+      background-size: auto 125%;
+      background-position: 175% bottom;
     }
   }
   .timeline {
@@ -90,6 +87,8 @@
     .pid,
     .timeline {
       width: auto;
+      background-position: center;
+      text-align: center;
     }
   }
 }

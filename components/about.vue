@@ -20,9 +20,8 @@
         <p class="profileText" STYLE="padding:0 4vw 0 0; text-align: left">
           Currently in my last year to my computer science engineer diploma at
           the Littoral Côte d'Opale's engineering school of information
-          technologies (EILco - Calais, France). I am seeking an Internship for
-          my graduation project, to practice and commence my journey through the
-          professional world.
+          technologies (EILco - Calais, France), I am also beginning my journey
+          with Sopra Steria as an intern dev.
         </p>
 
         <p

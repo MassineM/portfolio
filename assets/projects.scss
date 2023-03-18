@@ -6,14 +6,25 @@
   width: 97%;
 }
 
+.moreCodes {
+  position: relative;
+  text-align: center;
+  font-family: "Quicksand-Medium";
+  font-style: italic;
+  font-weight: 500;
+  font-size: MAX(1.25vh, 0.9vw);
+  color: $secondaryB;
+}
+
 .project {
   font-family: "Quicksand-Medium";
   font-weight: 500;
   font-size: MAX(1.25vh, 0.9vw);
+  line-height: MAX(1.25vh, 0.9vw);
   color: $primaryD;
   padding: MAX(0.5vw, 0.5vh) MAX(1vw, 1vh);
   position: relative;
-  display: inline;
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;

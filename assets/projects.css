@@ -80,14 +80,25 @@
   width: 97%;
 }
 
+.moreCodes {
+  position: relative;
+  text-align: center;
+  font-family: "Quicksand-Medium";
+  font-style: italic;
+  font-weight: 500;
+  font-size: max(1.25vh, 0.9vw);
+  color: #042245;
+}
+
 .project {
   font-family: "Quicksand-Medium";
   font-weight: 500;
   font-size: max(1.25vh, 0.9vw);
+  line-height: max(1.25vh, 0.9vw);
   color: #2a156f;
   padding: max(0.5vw, 0.5vh) max(1vw, 1vh);
   position: relative;
-  display: inline;
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;

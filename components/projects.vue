@@ -17,7 +17,7 @@
         <table v-if="show" class="pTable">
           <tr class="pLign">
             <td class="pTitle pTop pLeft">Name</td>
-            <td class="pItem pTop pRight">{{ selectedTab.title }};</td>
+            <td class="pItem pTop pRight">{{ selectedTab.name }};</td>
           </tr>
           <tr class="pLign">
             <td class="pTitle pLeft">Description</td>
@@ -49,6 +49,10 @@
       ><span v-html="link2"> </span>For all available documentation, click
       here.</a
     >
+    <p class="moreCodes">
+      Check out my GitHub - Contact section <br />
+      for more projects' source codes
+    </p>
   </div>
 </template>
 
@@ -63,40 +67,55 @@ export default {
       projects: [
         {
           key: 1,
-          title: "Internship at Fonaco",
+          title: "Internship <br /> @ Sopra Steria",
+          name: "Internship at Sopra Steria",
+          description:
+            "For my end-of-study internship, I am happily beginning my journey with Sopra Steria, a big multinational IT company",
+          tools:
+            "Web development, working with a team in the transportation sector's agency in Lille",
+          year: 2023,
+          selected: true,
+        },
+        {
+          key: 2,
+          title: "Internship <br /> @ Fonaco",
+          name: "Internship at Fonaco",
           description:
             "For my second year assistant engineer internship, I got to work with this advertising startup on creating a showcase website and a management interface",
           tools:
             "Showcase website using Bootstrap, a second one using Nuxt.JS and the management interface using native PHP and MySQL",
           link: "https://github.com/MassineM/FonacoGestionPHP",
           year: 2022,
-          selected: true,
+          selected: false,
         },
         {
-          key: 2,
+          key: 3,
           title: "PlantIO",
+          name: "PlantIO",
           description:
             "This project's goal is to help any farmer or gardner understand their plantations' environment to promote optimal growth conditions",
           tools:
-            "Setting a Raspberry to collect data for a Firebase API, used by a web front (Angular) & mobile app (React)",
+            "Setting a Raspberry to collect data for a Firebase API, consumed by a web front (Angular) & mobile app (React)",
           link: "https://github.com/MassineM/PlantIO",
           year: 2023,
           selected: false,
         },
         {
-          key: 3,
-          title: "AMLBID Interface & AutoML",
+          key: 4,
+          title: "AMLBID Interface <br /> & AutoML Research",
+          name: "AMLBID Interface & AutoML Research",
           description:
-            "Improving and adding features to a user interface of an automated machine learning system. Another part of the project is a bibliographic research on research on Automated Machine Learning",
+            "Improving and adding features to a user interface of an automated machine learning system. Another part of the project is a bibliographic research on Automated Machine Learning",
           tools:
-            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Python generated AML system. Research based on scientific articles made with LaTeX",
+            "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Flask - Python generated AML system. Research based on scientific articles made with LaTeX",
           link: "https://shorturl.at/dKO68",
           year: 2023,
           selected: false,
         },
         {
-          key: 4,
+          key: 5,
           title: "Connected Hive",
+          name: "Connected Hive",
           description:
             "Part of a bigger project, the main task was to create a bee farm data exploiting web platform",
           tools:
@@ -106,19 +125,9 @@ export default {
           selected: false,
         },
         {
-          key: 5,
-          title: "QuickPickMovies",
-          description:
-            "A web platform designed to help users with movies recommendations and information",
-          tools:
-            "Firebase gathering data from an external API (RapidAPI), front using NuxtJS",
-          link: "https://github.com/MassineM/QuickPickMovies",
-          year: 2022,
-          selected: false,
-        },
-        {
           key: 6,
           title: "Snek",
+          name: "Snek",
           description:
             "Based on the classic snake game concept, this is a home made version with variable levels and maps, hosted on an adapted Web platform",
           tools:
@@ -129,17 +138,8 @@ export default {
         },
         {
           key: 7,
-          title: "Motus",
-          description:
-            "Based on the famous Lingo television game, this is a French version named Motus based console game",
-          tools: "Fully developped by C language",
-          link: "https://github.com/MassineM/motus",
-          year: 2019,
-          selected: false,
-        },
-        {
-          key: 8,
           title: "Dodger Cab",
+          name: "Dodger Cab",
           description:
             "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
           tools: "Python 3 and Pygame library",
@@ -147,6 +147,17 @@ export default {
           year: 2012,
           selected: false,
         },
+        // {
+        //   key: 5,
+        //   title: "QuickPickMovies",
+        //   description:
+        //     "A web platform designed to help users with movies recommendations and information",
+        //   tools:
+        //     "Firebase gathering data from an external API (RapidAPI), front using NuxtJS",
+        //   link: "https://github.com/MassineM/QuickPickMovies",
+        //   year: 2022,
+        //   selected: false,
+        // },
         // {
         //   key: 1,
         //   title: "This WEB portfolio",
@@ -175,6 +186,16 @@ export default {
         //   tools:
         //     "Research and study of functionnal & technical aspects of platooning technologies on heavy vehicles",
         //   link: "https://drive.google.com/file/d/1JgaUU-GB__JA06fEcK7taSBWlnE0Fk1W/view?usp=sharing",
+        //   year: 2019,
+        //   selected: false,
+        // // },
+        // {
+        //   key: 7,
+        //   title: "Motus",
+        //   description:
+        //     "Based on the famous Lingo television game, this is a French version named Motus based console game",
+        //   tools: "Fully developped by C language",
+        //   link: "https://github.com/MassineM/motus",
         //   year: 2019,
         //   selected: false,
         // },
