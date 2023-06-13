@@ -108,7 +108,6 @@ export default {
             "Improving and adding features to a user interface of an automated machine learning system. Another part of the project is a bibliographic research on Automated Machine Learning",
           tools:
             "Adding dynamic features in PHP to a Wordpress website, and connecting it to the Flask - Python generated AML system. Research based on scientific articles made with LaTeX",
-          link: "https://shorturl.at/dKO68",
           year: 2023,
           selected: false,
         },
