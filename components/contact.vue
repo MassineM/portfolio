@@ -1,5 +1,5 @@
 <template>
-  <div id="Contact" class="mainArticle contact">
+  <div id="More" class="mainArticle contact">
     <h1 class="title">Find me on</h1>
     <ul class="contactContainer">
       <li>

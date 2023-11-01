@@ -15,13 +15,13 @@
           class="profileText"
           STYLE="padding:3vh 0 0 3vw;font-style: italic;font-weight: 900;"
         >
-          ~ Engineering school (since 2019)
+          ~ Engineering school (2019-2023)
         </p>
         <p class="profileText" STYLE="padding:0 4vw 0 0; text-align: left">
-          Currently in my last year to my computer science engineer diploma at
-          the Littoral Côte d'Opale's engineering school of information
-          technologies (EILco - Calais, France), I am also beginning my journey
-          with Sopra Steria as an intern dev.
+          Having completed my computer science engineering course at the
+          Littoral Côte d'Opale's engineering school of information technologies
+          (EILco - Calais, France), I am now looking for a job as an IT
+          engineer, preferably in the web development field.
         </p>
 
         <p

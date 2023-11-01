@@ -134,6 +134,7 @@
   font-weight: 600;
   font-size: min(2vh, 3vw);
   font-style: italic;
+  line-height: 1.5;
   text-align: center;
   position: relative;
   z-index: 0;

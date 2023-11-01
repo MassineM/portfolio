@@ -5,14 +5,15 @@
       <img src="~/assets/meSmile.png" id="homePic" class="homePic" />
     </div>
     <div class="welcome">
-      <p class="homeTitle animate-text-1">Massine Mountasser, 23 years old</p>
-      <p class="homeSubTitle animate-text-2">
-        computer science engineering student
-      </p>
+      <p class="homeTitle animate-text-1">Massine Mountasser, 24 years old</p>
+      <p class="homeSubTitle animate-text-2">computer science engineer</p>
     </div>
     <p class="homeText" id="homeText">
-      Feel free to wander as you please, don't hesitate on contacting me for any
-      ideas you'd like to share please. Thank you for visiting!
+      Hello, welcome to my portfolio! Here you can see a few of my projects and
+      learn more about me.
+      <br />I'm currently looking for a job as a developer, so feel free to
+      check out my CV all the way down. <br />Don't hesitate on contacting me
+      for any ideas you'd like to share please. Thank you for visiting!
     </p>
     <arrows id="arrows" />
   </div>

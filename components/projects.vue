@@ -50,7 +50,7 @@
       here.</a
     >
     <p class="moreCodes">
-      Check out my GitHub - Contact section <br />
+      Check out my GitHub below<br />
       for more projects' source codes
     </p>
   </div>
