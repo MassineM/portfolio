@@ -2,18 +2,22 @@
   <div id="Index" class="mainArticle">
     <div class="homePicContainer">
       <svg v-html="picBg" id="picBg" class="picBg"></svg>
-      <img src="~/assets/meSmile.png" id="homePic" class="homePic" />
+      <img src="~/assets/avatar2.png" id="homePic" class="homePic" />
     </div>
     <div class="welcome">
-      <p class="homeTitle animate-text-1">Massine Mountasser, 24 years old</p>
-      <p class="homeSubTitle animate-text-2">computer science engineer</p>
+      <p class="homeTitle animate-text-1">Massine Mountasser, 25 years old</p>
+      <p class="homeSubTitle animate-text-2">
+        IT engineer - full stack developer
+      </p>
     </div>
     <p class="homeText" id="homeText">
-      Hello, welcome to my portfolio! Here you can see a few of my projects and
-      learn more about me.
-      <br />I'm currently looking for a job as a developer, so feel free to
-      check out my CV all the way down. <br />Don't hesitate on contacting me
-      for any ideas you'd like to share please. Thank you for visiting!
+      Welcome to my portfolio. Here you can explore some of my projects and get
+      to know me better.
+      <br />I do web dev, recently graduated in IT engineering, and now actively
+      seeking new opportunities in the industry. <br />Feel free to browse all
+      the sections below and you'll find my resume all the way down. <br />Don't
+      hesitate to reach out if you have any ideas or collaborations in mind.
+      Thank you for visiting!
     </p>
     <arrows id="arrows" />
   </div>

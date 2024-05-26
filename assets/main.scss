@@ -24,6 +24,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
+
   main {
     flex-grow: 1;
     overflow-y: scroll;
@@ -65,18 +66,19 @@ body {
     0% {
       opacity: 0;
     }
+
     10% {
-      opacity: (random(40) + 40) / 100;
+      opacity: calc((random(40) + 40) / 100);
     }
+
     90% {
-      opacity: (random(40) + 40) / 100;
+      opacity: calc((random(40) + 40) / 100);
     }
+
     100% {
-      transform: translate3d(
-        (random(100) * 1vw),
-        (random(100) * 1vh),
-        (random(100) * 1px)
-      );
+      transform: translate3d((random(100) * 1vw),
+          (random(100) * 1vh),
+          (random(100) * 1px));
       opacity: 0;
     }
   }
@@ -87,11 +89,9 @@ body {
     height: $size;
     width: $size;
     animation-delay: -$i * 0.2s;
-    transform: translate3d(
-      (random(100) * 1vw),
-      (random(100) * 1vh),
-      (random(100) * 1px)
-    );
+    transform: translate3d((random(100) * 1vw),
+        (random(100) * 1vh),
+        (random(100) * 1px));
     // background: hsl(random(360), 70%, 50%);
     background-color: $secondaryL;
   }

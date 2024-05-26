@@ -179,7 +179,7 @@
     opacity: 0;
   }
 }
-@media only screen and (hover: none) and (pointer: coarse) {
+@media all and (max-width: 768px) {
   .sidemenuContainer nav ul .currshadow,
   .sidemenuContainer nav ul .shadow,
   .sidemenuContainer nav ul .text {

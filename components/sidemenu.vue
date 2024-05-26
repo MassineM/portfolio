@@ -190,12 +190,12 @@ export default {
     },
 
     keyScroll(e) {
-      e.preventDefault();
-      if (e.keyCode == 38) {
-        this.pointer -= 1;
-        if (this.pointer < 0) this.pointer += this.nav.length;
+      if ([8, 38, 33, 37, 36].includes(e.keyCode)) {
+        e.preventDefault();
+        this.pointer = (this.pointer - 1 + this.nav.length) % this.nav.length;
         this.selectCurrent(this.nav[this.pointer]);
-      } else if (e.keyCode == 40) {
+      } else if ([9, 32, 40, 34, 39, 35].includes(e.keyCode)) {
+        e.preventDefault();
         this.pointer = (this.pointer + 1) % this.nav.length;
         this.selectCurrent(this.nav[this.pointer]);
       }

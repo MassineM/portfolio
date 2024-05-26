@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+
   .pid {
     font-family: "Rubik", sans-serif;
     font-weight: 900;
@@ -24,11 +25,12 @@
       background-clip: text;
       -webkit-background-clip: text;
 
-      background-image: url(~/assets/ME2.png);
+      background-image: url(~/assets/textBG.png);
       background-size: auto 125%;
       background-position: 175% bottom;
     }
   }
+
   .timeline {
     width: 50%;
     margin: MAX(1vh, 1vw);
@@ -44,11 +46,9 @@
 }
 
 .certifications {
-  background: linear-gradient(
-    to right,
-    rgba($secondaryD, 0.6),
-    rgba($secondaryM, 0.6)
-  );
+  background: linear-gradient(to right,
+      rgba($secondaryD, 0.6),
+      rgba($secondaryM, 0.6));
   border-radius: MIN(2vh, 2vw);
   padding: MIN(2vh, 2vw);
   margin: MIN(2vh, 2vw);
@@ -62,18 +62,21 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
+
   svg {
     width: MAX(3vh, 3vw);
     height: MAX(3vh, 3vw);
   }
+
   transition: all 0.75s ease;
+
   &:hover {
     transform: scale(1.1);
     filter: brightness(1.1);
   }
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
+@media all and (max-width: 768px) {
   .certifications {
     &:hover {
       transform: scale(1);
@@ -81,9 +84,11 @@
     }
   }
 }
-@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+
+@media all and (max-width: 768px) and (orientation: portrait) {
   .profiletop {
     flex-direction: column-reverse;
+
     .pid,
     .timeline {
       width: auto;

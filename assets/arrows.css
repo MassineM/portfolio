@@ -108,7 +108,7 @@ polygon.arrow-top {
   opacity: 0.5;
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
+@media all and (max-width: 768px) {
   #more-arrows polygon.arrow-bottom {
     transform: translateY(0);
   }

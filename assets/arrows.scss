@@ -43,7 +43,7 @@ polygon {
   }
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
+@media all and (max-width: 768px) {
   #more-arrows {
     polygon {
       &.arrow-bottom {

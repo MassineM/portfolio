@@ -216,13 +216,13 @@
     opacity: 0;
   }
 }
-@media only screen and (hover: none) and (pointer: coarse) {
+@media all and (max-width: 768px) {
   .documentation:hover {
     transform: scale(1);
     filter: brightness(1);
   }
 }
-@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+@media all and (max-width: 768px) and (orientation: portrait) {
   .container {
     display: flex;
     flex-direction: column;

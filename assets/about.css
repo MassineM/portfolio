@@ -99,7 +99,7 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(~/assets/ME2.png);
+    background-image: url(~/assets/textBG.png);
     background-size: auto 125%;
     background-position: 175% bottom;
   }
@@ -143,13 +143,13 @@
   filter: brightness(1.1);
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
+@media all and (max-width: 768px) {
   .certifications:hover {
     transform: scale(1);
     filter: brightness(1);
   }
 }
-@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+@media all and (max-width: 768px) and (orientation: portrait) {
   .profiletop {
     flex-direction: column-reverse;
   }
