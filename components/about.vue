@@ -1,5 +1,5 @@
 <template>
-  <div id="About" class="mainArticle">
+  <section id="About" class="mainArticle">
     <h1 class="title">About me</h1>
     <div class="profiletop">
       <div class="timeline">
@@ -34,7 +34,7 @@
           Two years of preparatory classes for engineering schools - industrial
           technologies and sciences branch (CPGE TSI Reda Slaoui - Agadir,
           Morocco), followed by school hiring contests. I was more than happy to
-          go in for an IT school by the end.
+          enroll in an IT school by the end.
         </p>
         <p
           class="profileText"
@@ -44,9 +44,8 @@
         </p>
         <p class="profileText" STYLE="padding:0 4vw 0 0; text-align: left">
           Got my baccalaureate in mechanics, techs and sciences highschool
-          Youssef Ben Tachfine in Agadir, Morocco. Good enough grades for a
-          national competition in engineering sciences, and made it to
-          preparatory classes.
+          Youssef Ben Tachfine in Agadir, Morocco. After doing much hard work
+          and learning many things, I've made it to preparatory classes.
         </p>
         <p
           class="profileText"
@@ -78,7 +77,7 @@
         compassion goodwill
       </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

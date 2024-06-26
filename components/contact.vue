@@ -1,5 +1,5 @@
 <template>
-  <div id="More" class="mainArticle contact">
+  <footer id="More" class="mainArticle contact">
     <h1 class="title">Find me on</h1>
     <ul class="contactContainer">
       <li>
@@ -58,7 +58,7 @@
         </ul>
       </li>
     </ul>
-  </div>
+  </footer>
 </template>
 
 <script lang="js">

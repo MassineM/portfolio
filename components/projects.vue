@@ -1,5 +1,5 @@
 <template>
-  <div id="Projects" class="mainArticle">
+  <section id="Projects" class="mainArticle">
     <h1 class="title">Previous projects</h1>
     <ul class="container">
       <li
@@ -24,7 +24,7 @@
             <td class="pItem pRight">{{ selectedTab.description }};</td>
           </tr>
           <tr class="pLign">
-            <td class="pTitle pLeft">Tools used</td>
+            <td class="pTitle pLeft">Skills</td>
             <td class="pItem pRight">{{ selectedTab.tools }};</td>
           </tr>
           <tr class="pLign" v-if="selectedTab.link">
@@ -53,7 +53,7 @@
       Check out my GitHub below<br />
       for more projects' source codes
     </p>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -67,29 +67,40 @@ export default {
       projects: [
         {
           key: 1,
-          title: "Internship <br /> @ Sopra Steria",
-          name: "Internship at Sopra Steria",
+          title: "Internship <br /> @ MajorMedia",
+          name: "Internship at MajorMedia",
           description:
-            "For my end-of-study internship, I am happily beginning my journey with Sopra Steria, a big multinational IT company",
+            "Laravel back-end development on certain client applications, and other internal projects. Assistance with proxy product owner and quality assurance tasks",
           tools:
-            "Web development, working with a team in the transportation sector's agency in Lille",
-          year: 2023,
+            "Laravel | PHP | October CMS | Project management | PPO | QA",
+          year: 2024,
           selected: true,
         },
         {
           key: 2,
+          title: "Internship <br /> @ Sopra Steria",
+          name: "Internship at Sopra Steria",
+          description:
+            "As a Front-End developers team member on the SNCF’s TER website, France’s regional railways app, I did some maintenance work, features and tests creation, as well as improving accessibility",
+          tools:
+            "React | Next.JS | TypeScript | Jest | Jira | GitLab | Jenkins | Docker | Web accessibility | Agile methods | SCRUM",
+          year: 2023,
+          selected: true,
+        },
+        {
+          key: 3,
           title: "Internship <br /> @ Fonaco",
           name: "Internship at Fonaco",
           description:
-            "For my second year assistant engineer internship, I got to work with this advertising startup on creating a showcase website and a management interface",
+            "Developing a showcase website and an agency management platform, as well as working with clients doing graphic design and printing on various supports",
           tools:
-            "Showcase website using Bootstrap, a second one using Nuxt.JS and the management interface using native PHP and MySQL",
+            "Vue.JS | JavaScript | PHP | MySQL | Adobe Illustrator | Photoshop | Premiere Pro",
           link: "https://github.com/MassineM/FonacoGestionPHP",
           year: 2022,
           selected: false,
         },
         {
-          key: 3,
+          key: 4,
           title: "PlantIO",
           name: "PlantIO",
           description:
@@ -101,7 +112,7 @@ export default {
           selected: false,
         },
         {
-          key: 4,
+          key: 5,
           title: "AMLBID Interface <br /> & AutoML Research",
           name: "AMLBID Interface & AutoML Research",
           description:
@@ -112,7 +123,7 @@ export default {
           selected: false,
         },
         {
-          key: 5,
+          key: 6,
           title: "Connected Hive",
           name: "Connected Hive",
           description:
@@ -124,7 +135,7 @@ export default {
           selected: false,
         },
         {
-          key: 6,
+          key: 7,
           title: "Snek",
           name: "Snek",
           description:
@@ -135,17 +146,17 @@ export default {
           year: 2021,
           selected: false,
         },
-        {
-          key: 7,
-          title: "Dodger Cab",
-          name: "Dodger Cab",
-          description:
-            "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
-          tools: "Python 3 and Pygame library",
-          link: "https://github.com/MassineM/dodgerCab",
-          year: 2012,
-          selected: false,
-        },
+        // {
+        //   key: 7,
+        //   title: "Dodger Cab",
+        //   name: "Dodger Cab",
+        //   description:
+        //     "First ever self-made game and developped program from scratch, dodge police cars and beat your own highscore",
+        //   tools: "Python 3 and Pygame library",
+        //   link: "https://github.com/MassineM/dodgerCab",
+        //   year: 2012,
+        //   selected: false,
+        // },
         // {
         //   key: 5,
         //   title: "QuickPickMovies",

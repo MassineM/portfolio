@@ -1,5 +1,5 @@
 <template>
-  <div id="Index" class="mainArticle">
+  <header id="Index" class="mainArticle">
     <div class="homePicContainer">
       <svg v-html="picBg" id="picBg" class="picBg"></svg>
       <img src="~/assets/avatar2.png" id="homePic" class="homePic" />
@@ -20,7 +20,7 @@
       Thank you for visiting!
     </p>
     <arrows id="arrows" />
-  </div>
+  </header>
 </template>
 
 <script>
@@ -49,21 +49,21 @@ export default {
     },
   },
   mounted: function () {
-    this.animateText(1, 100, 2000);
-    this.animateText(2, 80, 2000);
+    this.animateText(1, 100, 1000);
+    this.animateText(2, 80, 1000);
     setTimeout(function () {
       document.getElementById("picBg").style.transform = "scale(1)";
       document.getElementById("picBg").style.opacity = 1;
-    }, 3000);
+    }, 2000);
     setTimeout(function () {
       document.getElementById("homePic").style.opacity = 1;
-    }, 4000);
+    }, 3000);
     setTimeout(function () {
       document.getElementById("homeText").style.opacity = 1;
-    }, 5000);
+    }, 2000);
     setTimeout(function () {
       document.getElementById("arrows").style.opacity = 1;
-    }, 7000);
+    }, 5000);
   },
 };
 </script>

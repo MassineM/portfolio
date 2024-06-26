@@ -2,8 +2,8 @@
   <div>
     <welcome />
     <about />
-    <skills />
     <projects />
+    <skills />
     <contact />
   </div>
 </template>

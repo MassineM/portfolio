@@ -39,7 +39,7 @@ export default {
     setTimeout(function () {
       document.getElementById("sideMenu").style.opacity = 1;
       document.getElementById("sideMenu").style.transform = "translateX(0%)";
-    }, 6000);
+    }, 4000);
   },
 };
 </script>
