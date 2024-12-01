@@ -2,22 +2,22 @@
   <header id="Index" class="mainArticle">
     <div class="homePicContainer">
       <svg v-html="picBg" id="picBg" class="picBg"></svg>
-      <img src="~/assets/avatar2.png" id="homePic" class="homePic" />
+      <!-- <img src="~/assets/avatar2.png" id="homePic" class="homePic" /> -->
+      <h2 id="homePic" class="heroTitle">Massine <br />Mountasser</h2>
     </div>
     <div class="welcome">
-      <p class="homeTitle animate-text-1">Massine Mountasser, 25 years old</p>
+      <p class="homeTitle animate-text-1">IT engineer - Project Manager</p>
       <p class="homeSubTitle animate-text-2">
-        IT engineer - full stack developer
+        Full stack developer, 25 years old
       </p>
     </div>
     <p class="homeText" id="homeText">
-      Welcome to my portfolio. Here you can explore some of my projects and get
-      to know me better.
-      <br />I do web dev, recently graduated in IT engineering, and now actively
-      seeking new opportunities in the industry. <br />Feel free to browse all
-      the sections below and you'll find my resume all the way down. <br />Don't
-      hesitate to reach out if you have any ideas or collaborations in mind.
-      Thank you for visiting!
+      Hi there! Take a dive into my journey..<br />Here you can explore some of
+      my projects and get to know me better. <br />I do web dev, recently
+      graduated in IT engineering. <br />Feel free to browse this page and
+      you'll find my resume all the way down. <br />Don't hesitate to reach out
+      if you have any ideas or collaborations in mind. <br />Thank you for
+      visiting!
     </p>
     <arrows id="arrows" />
   </header>

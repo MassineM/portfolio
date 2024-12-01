@@ -15,13 +15,13 @@
           class="profileText"
           STYLE="padding:3vh 0 0 3vw;font-style: italic;font-weight: 900;"
         >
-          ~ Engineering school (2019-2023)
+          ~ Engineering school (2019-present)
         </p>
         <p class="profileText" STYLE="padding:0 4vw 0 0; text-align: left">
           Having completed my computer science engineering course at the
-          Littoral Côte d'Opale's engineering school of information technologies
-          (EILco - Calais, France), I am now looking for a job as an IT
-          engineer, preferably in the web development field.
+          Littoral Côte d'Opale's Engineering School of Information Technologies
+          - EILco - Calais, France, I am now IT manager at Major Media, growring
+          together !
         </p>
 
         <p
@@ -31,8 +31,8 @@
           ~ Preparatory classes (2017-2019)
         </p>
         <p class="profileText" STYLE="padding:0 0 0 4vw; text-align: right">
-          Two years of preparatory classes for engineering schools - industrial
-          technologies and sciences branch (CPGE TSI Reda Slaoui - Agadir,
+          Two years of Preparatory Classes for Engineering Schools - Industrial
+          Technologies and Sciences branch (CPGE TSI Reda Slaoui - Agadir,
           Morocco), followed by school hiring contests. I was more than happy to
           enroll in an IT school by the end.
         </p>
@@ -44,8 +44,8 @@
         </p>
         <p class="profileText" STYLE="padding:0 4vw 0 0; text-align: left">
           Got my baccalaureate in mechanics, techs and sciences highschool
-          Youssef Ben Tachfine in Agadir, Morocco. After doing much hard work
-          and learning many things, I've made it to preparatory classes.
+          Youssef Ben Tachfine in Agadir, Morocco. After so much hard work and
+          learning many things, I've made it to preparatory classes.
         </p>
         <p
           class="profileText"
@@ -54,10 +54,10 @@
           ~ Before highschool (till 2016)
         </p>
         <p class="profileText" STYLE="padding:0 0 0 4vw; text-align: right">
-          Born in Agadir on may 13th of 1999, I was good at maths and have
-          always managed to get myself amazed by any technology I came across. I
-          loved playing with electronics as a child, and coding mini games since
-          early teenage years.
+          Born in Agadir on may 13th of 1999, I loved playing with electronics
+          as a child. I was good at maths and have always managed to get myself
+          amazed by any technology I came across, the coding mini games since
+          early teenage years type chill guy.
         </p>
       </div>
       <p class="pid">

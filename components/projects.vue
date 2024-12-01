@@ -67,12 +67,12 @@ export default {
       projects: [
         {
           key: 1,
-          title: "Internship <br /> @ MajorMedia",
-          name: "Internship at MajorMedia",
+          title: "PM<br />@ MajorMedia",
+          name: "Project Manager at MajorMedia",
           description:
-            "Laravel back-end development on certain client applications, and other internal projects. Assistance with proxy product owner and quality assurance tasks",
+            "Managing clients' projects & applications. My responsibilities include planning the team's workload and helping them achieve their goals, managing clients and defining their needs, defining the offer based on their objective and budget, proxy product owner and quality assurance tasks, and more...",
           tools:
-            "Laravel | PHP | October CMS | Project management | PPO | QA",
+            "PM | PPO | QA | React.JS | Next.JS |Laravel | PHP | October CMS | WordPress | PrestaShop | ClickUp | GitHub | Figma | Agile methods",
           year: 2024,
           selected: true,
         },
